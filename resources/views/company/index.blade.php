@@ -65,19 +65,19 @@
             </div>
             <div class="company-info__row">
               <dt>{{ __('company.info_ceo') }}</dt>
-              <dd>Takakazu Kaburagi</dd>
+              <dd>Yoshihiro Nakagawa</dd>
             </div>
             <div class="company-info__row">
               <dt>{{ __('company.info_founded') }}</dt>
-              <dd>April 20, 1989</dd>
+              <dd>April 20, 2025</dd>
             </div>
             <div class="company-info__row">
               <dt>{{ __('company.info_capital') }}</dt>
-              <dd>JPY 35,000,000</dd>
+              <dd>IDR 35.000.000.000</dd>
             </div>
             <div class="company-info__row">
               <dt>{{ __('company.info_bank') }}</dt>
-              <dd>Sumitomo Mitsui Banking Corporation, Hatanodai Branch</dd>
+              <dd>Mandiri</dd>
             </div>
             <div class="company-info__row">
               <dt>{{ __('company.info_business') }}</dt>

@@ -5,38 +5,6 @@
 
 @push('styles')
 <style>
-  /* AI support accent */
-  .ai-hero-bg {
-    background:
-      radial-gradient(800px 400px at 80% 0%, rgba(41,197,224,.15), transparent 60%),
-      radial-gradient(700px 400px at 0% 100%, rgba(26,111,224,.18), transparent 60%),
-      linear-gradient(135deg, #0B1B3B 0%, #0F2A55 60%, #155CC2 130%);
-    color: #fff;
-    padding: 80px 0 72px;
-    position: relative;
-    overflow: hidden;
-  }
-  .ai-hero-bg::before {
-    content: "";
-    position: absolute; inset: 0;
-    background-image:
-      linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
-    background-size: 40px 40px;
-    pointer-events: none;
-  }
-  .ai-hero-bg .breadcrumb,
-  .ai-hero-bg .breadcrumb a { color: #B6C8E8; }
-  .ai-hero-bg .breadcrumb a:hover { color: #fff; }
-  .ai-hero-bg .page-header__eyebrow { color: #6EC4FF; }
-  .ai-hero-bg h1 { color: #fff; }
-  .ai-hero-bg h1 .accent {
-    background: linear-gradient(90deg, #6EC4FF 0%, #29C5E0 100%);
-    -webkit-background-clip: text; background-clip: text; color: transparent;
-  }
-  .ai-hero-bg .page-header__lead { color: #D0DAEC; }
-  .ai-hero-bg__inner { position: relative; z-index: 1; }
-
   .ai-services {
     background: var(--c-bg-soft);
   }
