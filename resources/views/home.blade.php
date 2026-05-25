@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'FTS AI | Decades of system development experience, now augmented with AI and global support to power the next stage of growth')
-@section('description', 'FTS AI (Fujiyama Technology Solutions) is an IT partner that leverages long-standing experience in system development, web production, and IT consulting to help businesses with operational improvement, AI adoption, and overseas expansion.')
+@section('title', 'FTS AI | We integrate AI into your business systems')
+@section('description', 'FTS AI (Fujiyama Technology Solutions) builds practical AI integrations — chatbots, document automation, internal copilots, and AI agents — backed by 30+ years of business system development expertise.')
 
 @section('content')
 
@@ -10,32 +10,31 @@
     <div class="container hero__inner">
 
       <div class="hero__copy">
-        <span class="hero__eyebrow">SYSTEM × AI × GLOBAL</span>
+        <span class="hero__eyebrow">AI INTEGRATION × SYSTEM DEVELOPMENT × GLOBAL</span>
         <h1 class="hero__title">
-          Decades of system development experience,<br>
-          now augmented with <span class="accent">AI and global support</span>,<br>
-          to power your next stage of growth.
+          We integrate <span class="accent">AI into your business</span><br>
+          so it actually works in the field.
         </h1>
         <p class="hero__lead">
-          Fujiyama Technology Solutions draws on long-standing experience in system development, web production, and IT consulting<br class="hide-sp">
-          to help your business with operational improvement, AI adoption, and overseas expansion.
+          FTS AI builds practical AI integrations — chatbots, document automation, internal copilots, and AI agents —<br class="hide-sp">
+          backed by 30+ years of business system development. No buzzwords. Just working systems.
         </p>
         <div class="hero__ctas">
-          <a href="{{ route('service.index') }}" class="btn btn--primary btn--lg">Explore our services</a>
-          <a href="{{ route('contact.index') }}" class="btn btn--ghost btn--lg">Contact us</a>
+          <a href="{{ route('solutions.index') }}" class="btn btn--primary btn--lg">See AI solutions</a>
+          <a href="{{ route('contact.index') }}" class="btn btn--ghost btn--lg">Free AI assessment</a>
         </div>
         <div class="hero__meta">
           <div class="hero__meta-item">
-            <span class="hero__meta-num">Since founding<small>decades</small></span>
+            <span class="hero__meta-num">30+<small>years</small></span>
             <span class="hero__meta-label">SYSTEM DEVELOPMENT</span>
           </div>
           <div class="hero__meta-item">
-            <span class="hero__meta-num">6<small>service areas</small></span>
-            <span class="hero__meta-label">SERVICE AREA</span>
+            <span class="hero__meta-num">6<small>AI use cases</small></span>
+            <span class="hero__meta-label">PROVEN SOLUTIONS</span>
           </div>
           <div class="hero__meta-item">
-            <span class="hero__meta-num">AI + Global</span>
-            <span class="hero__meta-label">NEW CAPABILITY</span>
+            <span class="hero__meta-num">Free</span>
+            <span class="hero__meta-label">AI ASSESSMENT</span>
           </div>
         </div>
       </div>
@@ -44,6 +43,52 @@
         <img src="{{ asset('images/hero-ai-visual.png') }}" alt="" class="hero__visual-img">
       </div>
 
+    </div>
+  </section>
+
+  {{-- ============== SOLUTIONS TEASER ============== --}}
+  <section class="section" style="background:var(--c-bg-soft);padding:48px 0;">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__eyebrow">WHAT WE BUILD</span>
+        <h2 class="section__title">AI solutions that <span class="accent">connect to real operations</span></h2>
+      </div>
+      <div class="sol-teaser-grid">
+        <a href="{{ route('solutions.index') }}#chatbot" class="sol-teaser-item">
+          <span class="sol-teaser-item__icon">💬</span>
+          <span class="sol-teaser-item__label">AI Chatbot</span>
+          <span class="sol-teaser-item__sub">Grounded in your knowledge base</span>
+        </a>
+        <a href="{{ route('solutions.index') }}#document" class="sol-teaser-item">
+          <span class="sol-teaser-item__icon">📄</span>
+          <span class="sol-teaser-item__label">Document Automation</span>
+          <span class="sol-teaser-item__sub">Invoice, contract, report extraction</span>
+        </a>
+        <a href="{{ route('solutions.index') }}#copilot" class="sol-teaser-item">
+          <span class="sol-teaser-item__icon">🧠</span>
+          <span class="sol-teaser-item__label">Internal Copilot</span>
+          <span class="sol-teaser-item__sub">Staff Q&amp;A from internal docs</span>
+        </a>
+        <a href="{{ route('solutions.index') }}#sales" class="sol-teaser-item">
+          <span class="sol-teaser-item__icon">📈</span>
+          <span class="sol-teaser-item__label">Sales &amp; Content AI</span>
+          <span class="sol-teaser-item__sub">Proposals, emails, meeting notes</span>
+        </a>
+        <a href="{{ route('solutions.index') }}#automation" class="sol-teaser-item">
+          <span class="sol-teaser-item__icon">⚙️</span>
+          <span class="sol-teaser-item__label">Process Automation</span>
+          <span class="sol-teaser-item__sub">n8n / Make + AI workflows</span>
+        </a>
+        <a href="{{ route('solutions.index') }}#agent" class="sol-teaser-item">
+          <span class="sol-teaser-item__icon">🤖</span>
+          <span class="sol-teaser-item__label">Custom AI Agent</span>
+          <span class="sol-teaser-item__sub">Multi-step autonomous AI</span>
+        </a>
+      </div>
+      <div class="section-cta">
+        <a href="{{ route('solutions.index') }}" class="btn btn--primary">Explore all solutions</a>
+        <a href="{{ route('pricing.index') }}" class="btn btn--ghost">View pricing</a>
+      </div>
     </div>
   </section>
 
@@ -275,18 +320,18 @@
   <section class="section cta" id="contact">
     <div class="container container--narrow">
       <h2 class="cta__title">
-        From system development to AI and global support.<br>
-        Feel free to reach out anytime.
+        Ready to integrate AI into your operations?<br>
+        Start with a free 30-minute assessment.
       </h2>
       <p class="cta__lead">
-        Business system development, web production, IT consulting, AI adoption support, global partnerships, and more &mdash;<br class="hide-sp">
-        we take consultations tailored to your business challenges.
+        We'll map your operations to realistic AI use cases, tell you what's worth building first,
+        and give you an honest scope estimate &mdash; at no cost and no commitment.
       </p>
       <div class="cta__buttons">
-        <a href="{{ route('contact.index') }}" class="btn btn--primary btn--lg">Contact us</a>
-        <a href="{{ route('contact.index') }}" class="btn btn--ghost btn--lg">Free consultation</a>
+        <a href="{{ route('contact.index') }}" class="btn btn--primary btn--lg">Book free AI assessment</a>
+        <a href="{{ route('solutions.index') }}" class="btn btn--ghost btn--lg">Browse solutions</a>
       </div>
-      <p class="cta__meta">Initial consultations and quotes are free of charge</p>
+      <p class="cta__meta">No prior AI knowledge required &bull; Response within 1 business day</p>
     </div>
   </section>
 

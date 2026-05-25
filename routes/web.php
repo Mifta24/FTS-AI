@@ -16,6 +16,9 @@ Route::prefix('service')->name('service.')->group(function () {
     Route::view('hr-operation', 'service.hr-operation')->name('hr-operation');
 });
 
+Route::view('solutions', 'solutions.index')->name('solutions.index');
+Route::view('pricing', 'pricing.index')->name('pricing.index');
+Route::view('blog', 'blog.index')->name('blog.index');
 Route::view('works', 'works.index')->name('works.index');
 Route::view('company', 'company.index')->name('company.index');
 Route::view('news', 'news.index')->name('news.index');
