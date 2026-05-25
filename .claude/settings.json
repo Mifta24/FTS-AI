@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s http://fts-ai.test__TRACKED_VAR__)",
+      "Bash(curl -s http://fts-ai.test/welcome)"
+    ]
+  }
+}

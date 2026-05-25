@@ -43,6 +43,7 @@
             <li>Desain responsif mobile-friendly</li>
             <li>Form kontak + notifikasi email</li>
             <li>1 bulan dukungan pasca-launch</li>
+            <li>Integrasi SEO</li>
           </ul>
           <div class="pricing-card__footer">
             <a href="{{ route('contact.index') }}" class="btn btn--ghost pricing-card__btn">Hubungi kami</a>
