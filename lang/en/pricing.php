@@ -1,0 +1,95 @@
+<?php
+
+return [
+    'title' => 'Pricing | FTS AI — AI integration packages for every stage',
+    'description' => 'FTS AI pricing: from a starter AI chatbot to full enterprise AI agent development. Transparent packages with clear deliverables — or custom scoping for complex needs.',
+
+    'breadcrumb' => 'Pricing',
+    'eyebrow' => 'PRICING',
+    'hero_title' => 'Transparent pricing,<br><span class="accent">no surprise invoices</span>.',
+    'hero_lead' => 'Three starting packages that cover the most common AI integration needs. Every engagement starts with a free assessment — we\'ll recommend the right fit before you commit.',
+
+    // Starter
+    'starter_badge' => 'Starter',
+    'starter_name' => 'Website + Chatbot',
+    'starter_tagline' => '3-page professional website + contact chatbot. No AI.',
+    'starter_currency' => 'from',
+    'starter_amount' => 'Rp 300,000',
+    'starter_period' => 'one-time',
+    'starter_f1' => '3 pages (Home, About, Contact)',
+    'starter_f2' => 'Contact chatbot widget (non-AI)',
+    'starter_f3' => 'Responsive mobile-friendly design',
+    'starter_f4' => 'Contact form + email notification',
+    'starter_f5' => '1 month post-launch support',
+    'starter_f6' => 'SEO integration',
+    'starter_cta' => 'Contact us',
+
+    // Growth
+    'growth_badge' => 'Most Popular',
+    'growth_name' => 'Website + AI Chatbot',
+    'growth_tagline' => 'Full website with an AI chatbot that answers based on your business content.',
+    'growth_currency' => 'from',
+    'growth_amount' => 'Rp 800,000',
+    'growth_period' => 'one-time',
+    'growth_f1' => 'All Starter features',
+    'growth_f2' => 'AI chatbot based on your documents / business FAQ',
+    'growth_f3' => 'ChatGPT / Claude integration',
+    'growth_f4' => 'Embed on website or WhatsApp / LINE',
+    'growth_f5' => 'Admin dashboard for content updates',
+    'growth_f6' => '3 months post-launch support',
+    'growth_cta' => 'Contact us',
+
+    // Enterprise
+    'enterprise_badge' => 'Enterprise',
+    'enterprise_name' => 'Full AI Integration',
+    'enterprise_tagline' => 'AI integration into your existing business systems — document automation, agents, and more.',
+    'enterprise_currency' => 'price',
+    'enterprise_amount' => 'custom',
+    'enterprise_f1' => 'All Website + AI Chatbot features',
+    'enterprise_f2' => 'Integration with existing CRM / ERP / database',
+    'enterprise_f3' => 'Document automation (invoice, contract, report)',
+    'enterprise_f4' => 'AI automation workflows (n8n / Make)',
+    'enterprise_f5' => 'Custom multi-step AI agent',
+    'enterprise_f6' => 'Offshore team support available',
+    'enterprise_cta' => 'Discuss your needs',
+
+    'pricing_note' => 'All prices are initial estimates in IDR. Final pricing is confirmed after a free consultation. Offshore development options can reduce costs by 40–60%.',
+
+    // Add-ons
+    'addons_eyebrow' => 'ADD-ONS',
+    'addons_title' => 'Additional services',
+    'addons_lead' => 'Can be added to any package as needed.',
+    'addon1_label' => 'AI Training',
+    'addon1_desc' => 'Internal AI usage guide + staff workshop (online/offline)',
+    'addon1_price' => 'from Rp 500,000',
+    'addon2_label' => 'Multilingual Support',
+    'addon2_desc' => 'Chatbot responds in Indonesian, English, and Japanese',
+    'addon2_price' => 'from Rp 300,000',
+    'addon3_label' => 'Monthly Maintenance',
+    'addon3_desc' => 'Content updates, system maintenance, and AI prompt adjustments',
+    'addon3_price' => 'from Rp 200,000/mo',
+    'addon4_label' => 'AI Adoption Diagnostic',
+    'addon4_desc' => 'Operational audit + prioritized AI adoption roadmap',
+    'addon4_price' => 'from Rp 500,000',
+
+    // FAQ
+    'faq_eyebrow' => 'FAQ',
+    'faq_title' => 'Common questions',
+    'faq1_q' => 'How long does a typical project take?',
+    'faq1_a' => 'A Starter chatbot typically takes 3–4 weeks from kickoff to launch. AI Integration packages run 6–10 weeks. Custom agent projects are scoped individually but usually 3–6 months.',
+    'faq2_q' => 'Do I need to provide my own OpenAI / Anthropic API keys?',
+    'faq2_a' => 'Yes — we recommend clients hold their own API keys so you\'re never locked into us. We\'ll help you set up billing and explain cost implications before we start.',
+    'faq3_q' => 'Is my company\'s data kept private?',
+    'faq3_a' => 'Absolutely. We architect solutions so your proprietary data stays in your infrastructure. We never send your documents to third-party models without your explicit consent and review.',
+    'faq4_q' => 'Can you work with our existing systems (SAP, Salesforce, etc.)?',
+    'faq4_a' => 'Yes — integration with existing business systems is our core strength. We\'ve connected AI to a wide range of ERPs, CRMs, and custom-built systems over the years.',
+    'faq5_q' => 'What if we want to start smaller than the Starter package?',
+    'faq5_a' => 'We offer a paid AI Adoption Diagnostic ($1,200) that maps your operations to AI opportunities without committing to a build. Many clients start there and then move into a package.',
+
+    // CTA
+    'cta_title' => 'Start with a free assessment.',
+    'cta_lead' => 'We\'ll review your operations, identify realistic AI opportunities, and give you an honest scope estimate — at no cost and no commitment.',
+    'cta_primary' => 'Book free assessment',
+    'cta_secondary' => 'Browse solutions',
+    'cta_meta' => 'Response within 1 business day',
+];

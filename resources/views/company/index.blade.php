@@ -1,18 +1,16 @@
 @extends('layouts.app')
 
-@section('title', 'Company | FTS AI')
-@section('description', "Fujiyama Technology Solutions company profile, address, access, and nearby parking. Leveraging decades of experience in system development, web production, and IT consulting, we support business growth through AI and global partnerships.")
+@section('title', __('company.title'))
+@section('description', __('company.description'))
 
 @section('content')
 
   <section class="page-header">
     <div class="container page-header__inner">
-      <p class="breadcrumb"><a href="{{ route('home') }}">Home</a><span class="breadcrumb__sep">›</span>Company</p>
-      <p class="page-header__eyebrow">COMPANY</p>
-      <h1 class="page-header__title">Company</h1>
-      <p class="page-header__lead">
-        Fujiyama Technology Solutions company profile and location.
-      </p>
+      <p class="breadcrumb"><a href="{{ route('home') }}">{{ __('common.home') }}</a><span class="breadcrumb__sep">›</span>{{ __('company.breadcrumb') }}</p>
+      <p class="page-header__eyebrow">{{ __('company.eyebrow') }}</p>
+      <h1 class="page-header__title">{{ __('company.page_title') }}</h1>
+      <p class="page-header__lead">{{ __('company.page_lead') }}</p>
     </div>
   </section>
 
@@ -33,7 +31,7 @@
 
           <dl class="company-location">
             <div class="company-location__row">
-              <dt>Address</dt>
+              <dt>{{ __('company.address_label') }}</dt>
               <dd>
                 Neo Soho Mall<br>
                 West Jakarta, Indonesia
@@ -44,53 +42,53 @@
           <a class="company-location__link"
              href="https://www.google.com/maps?q=Neo+Soho+Mall+West+Jakarta"
              target="_blank" rel="noopener noreferrer">
-            Open in Google Maps
+            {{ __('company.open_maps') }}
           </a>
         </article>
 
         <article class="company-card company-card--info">
           <dl class="company-info">
             <div class="company-info__row">
-              <dt>Company name</dt>
+              <dt>{{ __('company.info_company_name') }}</dt>
               <dd>Fujiyama Technology Solutions</dd>
             </div>
             <div class="company-info__row">
-              <dt>English name</dt>
+              <dt>{{ __('company.info_english_name') }}</dt>
               <dd>Fujiyama Technology Solutions</dd>
             </div>
             <div class="company-info__row">
-              <dt>Address</dt>
+              <dt>{{ __('company.info_address') }}</dt>
               <dd>
                 Neo Soho Mall<br>
                 West Jakarta, Indonesia
               </dd>
             </div>
             <div class="company-info__row">
-              <dt>CEO</dt>
+              <dt>{{ __('company.info_ceo') }}</dt>
               <dd>Takakazu Kaburagi</dd>
             </div>
             <div class="company-info__row">
-              <dt>Founded</dt>
+              <dt>{{ __('company.info_founded') }}</dt>
               <dd>April 20, 1989</dd>
             </div>
             <div class="company-info__row">
-              <dt>Capital</dt>
+              <dt>{{ __('company.info_capital') }}</dt>
               <dd>JPY 35,000,000</dd>
             </div>
             <div class="company-info__row">
-              <dt>Bank</dt>
+              <dt>{{ __('company.info_bank') }}</dt>
               <dd>Sumitomo Mitsui Banking Corporation, Hatanodai Branch</dd>
             </div>
             <div class="company-info__row">
-              <dt>Business</dt>
+              <dt>{{ __('company.info_business') }}</dt>
               <dd>
                 <ul class="company-info__list">
-                  <li>Planning, research, design, and development of computer systems</li>
-                  <li>Design, development, and sales of computer software</li>
-                  <li>Planning, research, design, and development of web-based systems</li>
-                  <li>Sales of computers and other office equipment</li>
-                  <li>IT consulting</li>
-                  <li>Planning, design, production, and development of websites</li>
+                  <li>{{ __('company.info_b1') }}</li>
+                  <li>{{ __('company.info_b2') }}</li>
+                  <li>{{ __('company.info_b3') }}</li>
+                  <li>{{ __('company.info_b4') }}</li>
+                  <li>{{ __('company.info_b5') }}</li>
+                  <li>{{ __('company.info_b6') }}</li>
                 </ul>
               </dd>
             </div>
@@ -104,20 +102,20 @@
 
   <section class="section cta">
     <div class="container container--narrow">
-      <h2 class="cta__title">Inquiries to the company</h2>
+      <h2 class="cta__title">{{ __('company.cta_title') }}</h2>
       <p class="cta__lead">
-        Business, recruitment, partnerships &mdash; whatever the topic, feel free to reach out.
+        {!! __('company.cta_lead') !!}
       </p>
       <div class="cta__buttons">
-        <a href="{{ route('contact.index') }}" class="btn btn--primary btn--lg">Contact us</a>
-        <a href="{{ route('contact.index') }}" class="btn btn--ghost btn--lg">Free consultation</a>
+        <a href="{{ route('contact.index') }}" class="btn btn--primary btn--lg">{{ __('company.cta_primary') }}</a>
+        <a href="{{ route('contact.index') }}" class="btn btn--ghost btn--lg">{{ __('company.cta_secondary') }}</a>
       </div>
     </div>
   </section>
 
   <nav class="back-nav" aria-label="Page navigation">
     <div class="container">
-      <a href="{{ route('home') }}" class="btn btn--ghost back-nav__btn"><span class="back-nav__arrow" aria-hidden="true">←</span>Back to home</a>
+      <a href="{{ route('home') }}" class="btn btn--ghost back-nav__btn"><span class="back-nav__arrow" aria-hidden="true">←</span>{{ __('common.back_to_home') }}</a>
     </div>
   </nav>
 

@@ -1,18 +1,17 @@
 @extends('layouts.app')
 
-@section('title', 'Works | FTS AI')
-@section('description', "FTS AI's works. We present our development and adoption support across business systems, web systems, and packaged software, organized by domain.")
+@section('title', __('works.title'))
+@section('description', __('works.description'))
 
 @section('content')
 
   <section class="page-header">
     <div class="container page-header__inner">
-      <p class="breadcrumb"><a href="{{ route('home') }}">Home</a><span class="breadcrumb__sep">›</span>Works</p>
-      <p class="page-header__eyebrow">WORKS</p>
-      <h1 class="page-header__title">Works</h1>
+      <p class="breadcrumb"><a href="{{ route('home') }}">{{ __('common.home') }}</a><span class="breadcrumb__sep">›</span>{{ __('works.breadcrumb') }}</p>
+      <p class="page-header__eyebrow">{{ __('works.eyebrow') }}</p>
+      <h1 class="page-header__title">{{ __('works.page_title') }}</h1>
       <p class="page-header__lead">
-        We have delivered development and adoption support for business systems, web systems, and packaged software,<br class="hide-sp">
-        tailored to each client's operations.
+        {!! __('works.page_lead') !!}
       </p>
     </div>
   </section>
@@ -25,73 +24,55 @@
         <article class="works-card">
           <header class="works-card__head">
             <span class="works-card__num-chip" aria-hidden="true">01</span>
-            <h3 class="works-card__title">Business System Development</h3>
+            <h3 class="works-card__title">{{ __('works.w1_title') }}</h3>
           </header>
           <span class="works-card__rule" aria-hidden="true"></span>
-          <p class="works-card__text">
-            Sales, inventory, customer, and internal management systems &mdash;
-            built for the specific workflow of each business.
-          </p>
+          <p class="works-card__text">{{ __('works.w1_text') }}</p>
         </article>
 
         <article class="works-card">
           <header class="works-card__head">
             <span class="works-card__num-chip" aria-hidden="true">02</span>
-            <h3 class="works-card__title">Web Systems & Website Production</h3>
+            <h3 class="works-card__title">{{ __('works.w2_title') }}</h3>
           </header>
           <span class="works-card__rule" aria-hidden="true"></span>
-          <p class="works-card__text">
-            Corporate sites, service sites, booking and contact forms, and web systems with admin dashboards &mdash;
-            web work that supports operations and customer acquisition.
-          </p>
+          <p class="works-card__text">{{ __('works.w2_text') }}</p>
         </article>
 
         <article class="works-card">
           <header class="works-card__head">
             <span class="works-card__num-chip" aria-hidden="true">03</span>
-            <h3 class="works-card__title">Packaged Software & Business Support</h3>
+            <h3 class="works-card__title">{{ __('works.w3_title') }}</h3>
           </header>
           <span class="works-card__rule" aria-hidden="true"></span>
-          <p class="works-card__text">
-            Through the adoption and operation of existing packages and business-support services,
-            we improve day-to-day operational efficiency.
-          </p>
+          <p class="works-card__text">{{ __('works.w3_text') }}</p>
         </article>
 
         <article class="works-card">
           <header class="works-card__head">
             <span class="works-card__num-chip" aria-hidden="true">04</span>
-            <h3 class="works-card__title">IT Consulting & Improvement Proposals</h3>
+            <h3 class="works-card__title">{{ __('works.w4_title') }}</h3>
           </header>
           <span class="works-card__rule" aria-hidden="true"></span>
-          <p class="works-card__text">
-            We organize existing systems and operational issues and propose improvements
-            connected to IT usage, DX, and AI.
-          </p>
+          <p class="works-card__text">{{ __('works.w4_text') }}</p>
         </article>
 
         <article class="works-card">
           <header class="works-card__head">
             <span class="works-card__num-chip" aria-hidden="true">05</span>
-            <h3 class="works-card__title">AI Adoption Support</h3>
+            <h3 class="works-card__title">{{ __('works.w5_title') }}</h3>
           </header>
           <span class="works-card__rule" aria-hidden="true"></span>
-          <p class="works-card__text">
-            We deliver operational efficiency, automated inquiry handling, and internal business support
-            using generative AI and AI tools.
-          </p>
+          <p class="works-card__text">{{ __('works.w5_text') }}</p>
         </article>
 
         <article class="works-card">
           <header class="works-card__head">
             <span class="works-card__num-chip" aria-hidden="true">06</span>
-            <h3 class="works-card__title">Global Development Support</h3>
+            <h3 class="works-card__title">{{ __('works.w6_title') }}</h3>
           </header>
           <span class="works-card__rule" aria-hidden="true"></span>
-          <p class="works-card__text">
-            We cover system development and operations support, plus multilingual web production,
-            through partnerships with overseas talent and vendors.
-          </p>
+          <p class="works-card__text">{{ __('works.w6_text') }}</p>
         </article>
 
       </div>
@@ -101,21 +82,20 @@
 
   <section class="section cta">
     <div class="container container--narrow">
-      <h2 class="cta__title">Consultations about our works</h2>
+      <h2 class="cta__title">{{ __('works.cta_title') }}</h2>
       <p class="cta__lead">
-        Based on the domains and capabilities we've covered, we can propose solutions fitted to your situation.<br class="hide-sp">
-        Feel free to reach out.
+        {!! __('works.cta_lead') !!}
       </p>
       <div class="cta__buttons">
-        <a href="{{ route('contact.index') }}" class="btn btn--primary btn--lg">Contact us</a>
-        <a href="{{ route('contact.index') }}" class="btn btn--ghost btn--lg">Free consultation</a>
+        <a href="{{ route('contact.index') }}" class="btn btn--primary btn--lg">{{ __('works.cta_primary') }}</a>
+        <a href="{{ route('contact.index') }}" class="btn btn--ghost btn--lg">{{ __('works.cta_secondary') }}</a>
       </div>
     </div>
   </section>
 
   <nav class="back-nav" aria-label="Page navigation">
     <div class="container">
-      <a href="{{ route('home') }}" class="btn btn--ghost back-nav__btn"><span class="back-nav__arrow" aria-hidden="true">←</span>Back to home</a>
+      <a href="{{ route('home') }}" class="btn btn--ghost back-nav__btn"><span class="back-nav__arrow" aria-hidden="true">←</span>{{ __('common.back_to_home') }}</a>
     </div>
   </nav>
 

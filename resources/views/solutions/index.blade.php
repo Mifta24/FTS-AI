@@ -1,25 +1,22 @@
 @extends('layouts.app')
 
-@section('title', 'AI Solutions | FTS AI — Real-world AI use cases for your business')
-@section('description', 'FTS AI delivers concrete AI integrations: chatbots grounded in your knowledge base, document automation, internal copilots, sales AI, and custom AI agents — built on decades of system development expertise.')
+@section('title', __('solutions.title'))
+@section('description', __('solutions.description'))
 
 @section('content')
 
   {{-- ============== PAGE HEADER ============== --}}
   <section class="ai-hero-bg">
     <div class="container ai-hero-bg__inner">
-      <p class="breadcrumb"><a href="{{ route('home') }}">Home</a><span class="breadcrumb__sep">›</span>Solutions</p>
-      <p class="page-header__eyebrow">AI SOLUTIONS</p>
+      <p class="breadcrumb"><a href="{{ route('home') }}">{{ __('common.home') }}</a><span class="breadcrumb__sep">›</span>{{ __('solutions.breadcrumb') }}</p>
+      <p class="page-header__eyebrow">{{ __('solutions.eyebrow') }}</p>
       <h1 class="page-header__title">
-        AI that works in <span class="accent">your actual operations</span>.
+        {!! __('solutions.hero_title') !!}
       </h1>
-      <p class="page-header__lead">
-        We don't sell AI in the abstract. Every solution we build connects to existing systems, reflects real workflows,
-        and delivers measurable outcomes — backed by 30+ years of business system development.
-      </p>
+      <p class="page-header__lead">{{ __('solutions.hero_lead') }}</p>
       <div class="hero__ctas" style="margin-top:28px;">
-        <a href="{{ route('contact.index') }}" class="btn btn--blue btn--lg">Book a free AI assessment</a>
-        <a href="{{ route('pricing.index') }}" class="btn btn--ghost btn--lg" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.3);color:#fff;">View pricing</a>
+        <a href="{{ route('contact.index') }}" class="btn btn--blue btn--lg">{{ __('solutions.hero_cta_primary') }}</a>
+        <a href="{{ route('pricing.index') }}" class="btn btn--ghost btn--lg" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.3);color:#fff;">{{ __('solutions.hero_cta_secondary') }}</a>
       </div>
     </div>
   </section>
@@ -28,11 +25,9 @@
   <section class="section" style="background:#fff;">
     <div class="container">
       <div class="section__head">
-        <span class="section__eyebrow">USE CASES</span>
-        <h2 class="section__title">What we can build <span class="accent">for you</span></h2>
-        <p class="section__lead">
-          Six proven AI integration patterns — each starting from a real business problem.
-        </p>
+        <span class="section__eyebrow">{{ __('solutions.uc_eyebrow') }}</span>
+        <h2 class="section__title">{!! __('solutions.uc_title') !!}</h2>
+        <p class="section__lead">{{ __('solutions.uc_lead') }}</p>
       </div>
 
       <div class="sol-grid">
@@ -46,12 +41,9 @@
             </div>
             <span class="sol-card__num">01</span>
           </div>
-          <h3 class="sol-card__title">AI Chatbot / Knowledge Base</h3>
-          <p class="sol-card__problem"><strong>Problem:</strong> Staff spend hours answering the same FAQs. Customers can't find answers after hours.</p>
-          <p class="sol-card__text">
-            We embed your product manuals, SOPs, and knowledge documents into a RAG-powered chatbot.
-            It answers grounded in your data — not hallucinated generalities — on your website or internal portal.
-          </p>
+          <h3 class="sol-card__title">{{ __('solutions.uc1_title') }}</h3>
+          <p class="sol-card__problem">{!! __('solutions.uc1_problem') !!}</p>
+          <p class="sol-card__text">{{ __('solutions.uc1_text') }}</p>
           <ul class="sol-card__tags">
             <li>ChatGPT / Claude</li>
             <li>RAG (Retrieval-Augmented)</li>
@@ -72,12 +64,9 @@
             </div>
             <span class="sol-card__num">02</span>
           </div>
-          <h3 class="sol-card__title">Document Automation</h3>
-          <p class="sol-card__problem"><strong>Problem:</strong> Invoices, contracts, and reports are entered manually — slow and error-prone.</p>
-          <p class="sol-card__text">
-            AI reads incoming documents (PDF, image, email) and extracts structured data directly into your system.
-            We handle the edge cases that off-the-shelf OCR can't.
-          </p>
+          <h3 class="sol-card__title">{{ __('solutions.uc2_title') }}</h3>
+          <p class="sol-card__problem">{!! __('solutions.uc2_problem') !!}</p>
+          <p class="sol-card__text">{{ __('solutions.uc2_text') }}</p>
           <ul class="sol-card__tags">
             <li>PDF / image parsing</li>
             <li>Structured extraction</li>
@@ -97,12 +86,9 @@
             </div>
             <span class="sol-card__num">03</span>
           </div>
-          <h3 class="sol-card__title">Internal Copilot</h3>
-          <p class="sol-card__problem"><strong>Problem:</strong> Staff can't find the right internal info quickly. Knowledge walks out the door when people leave.</p>
-          <p class="sol-card__text">
-            Staff ask questions in natural language and get answers sourced from your internal docs, wikis, and databases.
-            Onboarding time drops. Institutional knowledge stays.
-          </p>
+          <h3 class="sol-card__title">{{ __('solutions.uc3_title') }}</h3>
+          <p class="sol-card__problem">{!! __('solutions.uc3_problem') !!}</p>
+          <p class="sol-card__text">{{ __('solutions.uc3_text') }}</p>
           <ul class="sol-card__tags">
             <li>Natural language search</li>
             <li>Internal knowledge base</li>
@@ -120,12 +106,9 @@
             </div>
             <span class="sol-card__num">04</span>
           </div>
-          <h3 class="sol-card__title">Sales & Content AI</h3>
-          <p class="sol-card__problem"><strong>Problem:</strong> Proposals, follow-up emails, and meeting minutes eat up half the sales team's day.</p>
-          <p class="sol-card__text">
-            AI drafts proposals, emails, and meeting summaries in your brand voice.
-            Integrated into your CRM or workflow tools — not a standalone app that no one uses.
-          </p>
+          <h3 class="sol-card__title">{{ __('solutions.uc4_title') }}</h3>
+          <p class="sol-card__problem">{!! __('solutions.uc4_problem') !!}</p>
+          <p class="sol-card__text">{{ __('solutions.uc4_text') }}</p>
           <ul class="sol-card__tags">
             <li>Proposal generation</li>
             <li>Email drafting</li>
@@ -144,12 +127,9 @@
             </div>
             <span class="sol-card__num">05</span>
           </div>
-          <h3 class="sol-card__title">Process Automation</h3>
-          <p class="sol-card__problem"><strong>Problem:</strong> Repetitive back-office tasks — data entry, report generation, status emails — drain productivity.</p>
-          <p class="sol-card__text">
-            We combine AI judgment with automation tools (n8n, Make, custom APIs) to build workflows that run themselves.
-            AI handles the decisions; automation handles the execution.
-          </p>
+          <h3 class="sol-card__title">{{ __('solutions.uc5_title') }}</h3>
+          <p class="sol-card__problem">{!! __('solutions.uc5_problem') !!}</p>
+          <p class="sol-card__text">{{ __('solutions.uc5_text') }}</p>
           <ul class="sol-card__tags">
             <li>n8n / Make workflows</li>
             <li>Email automation</li>
@@ -167,12 +147,9 @@
             </div>
             <span class="sol-card__num">06</span>
           </div>
-          <h3 class="sol-card__title">Custom AI Agent</h3>
-          <p class="sol-card__problem"><strong>Problem:</strong> You need AI that can take multi-step actions across tools — not just answer questions.</p>
-          <p class="sol-card__text">
-            We design and build autonomous AI agents that plan, call APIs, read databases, and complete complex tasks end-to-end.
-            Built on LangChain / LlamaIndex with full observability.
-          </p>
+          <h3 class="sol-card__title">{{ __('solutions.uc6_title') }}</h3>
+          <p class="sol-card__problem">{!! __('solutions.uc6_problem') !!}</p>
+          <p class="sol-card__text">{{ __('solutions.uc6_text') }}</p>
           <ul class="sol-card__tags">
             <li>LangChain / LlamaIndex</li>
             <li>Multi-tool orchestration</li>
@@ -189,14 +166,14 @@
   <section class="section" style="background:var(--c-bg-soft);">
     <div class="container">
       <div class="section__head">
-        <span class="section__eyebrow">TECH STACK</span>
-        <h2 class="section__title">Tools & platforms we work with</h2>
-        <p class="section__lead">We choose the right tool for your context — not the one we're most familiar with.</p>
+        <span class="section__eyebrow">{{ __('solutions.stack_eyebrow') }}</span>
+        <h2 class="section__title">{{ __('solutions.stack_title') }}</h2>
+        <p class="section__lead">{{ __('solutions.stack_lead') }}</p>
       </div>
 
       <div class="stack-grid">
         <div class="stack-group">
-          <h4 class="stack-group__label">LLM / AI Models</h4>
+          <h4 class="stack-group__label">{{ __('solutions.stack_llm') }}</h4>
           <ul class="stack-list">
             <li class="stack-item">GPT-4o / GPT-4 Turbo</li>
             <li class="stack-item">Claude 3.5 Sonnet</li>
@@ -205,7 +182,7 @@
           </ul>
         </div>
         <div class="stack-group">
-          <h4 class="stack-group__label">Frameworks</h4>
+          <h4 class="stack-group__label">{{ __('solutions.stack_frameworks') }}</h4>
           <ul class="stack-list">
             <li class="stack-item">LangChain</li>
             <li class="stack-item">LlamaIndex</li>
@@ -214,7 +191,7 @@
           </ul>
         </div>
         <div class="stack-group">
-          <h4 class="stack-group__label">Vector / Storage</h4>
+          <h4 class="stack-group__label">{{ __('solutions.stack_vector') }}</h4>
           <ul class="stack-list">
             <li class="stack-item">Pinecone</li>
             <li class="stack-item">Supabase pgvector</li>
@@ -223,7 +200,7 @@
           </ul>
         </div>
         <div class="stack-group">
-          <h4 class="stack-group__label">Infrastructure</h4>
+          <h4 class="stack-group__label">{{ __('solutions.stack_infra') }}</h4>
           <ul class="stack-list">
             <li class="stack-item">AWS / GCP / Azure</li>
             <li class="stack-item">Vercel / Railway</li>
@@ -239,33 +216,24 @@
   <section class="section" style="background:#fff;">
     <div class="container">
       <div class="section__head">
-        <span class="section__eyebrow">OUR APPROACH</span>
-        <h2 class="section__title">Why FTS AI is different</h2>
+        <span class="section__eyebrow">{{ __('solutions.approach_eyebrow') }}</span>
+        <h2 class="section__title">{{ __('solutions.approach_title') }}</h2>
       </div>
       <div class="diff-grid">
         <div class="diff-card">
           <span class="diff-card__icon">🏗</span>
-          <h3 class="diff-card__title">System builders, not prompt engineers</h3>
-          <p class="diff-card__text">
-            We come from decades of building business systems. AI is a component we integrate into systems — not a product we sell standalone.
-            That means your AI connects to real data and real workflows.
-          </p>
+          <h3 class="diff-card__title">{{ __('solutions.diff1_title') }}</h3>
+          <p class="diff-card__text">{{ __('solutions.diff1_text') }}</p>
         </div>
         <div class="diff-card">
           <span class="diff-card__icon">🔬</span>
-          <h3 class="diff-card__title">Pilot-first, scale after</h3>
-          <p class="diff-card__text">
-            We start every engagement with a narrow, verifiable pilot. You see it working in your actual environment
-            before we scale. No big-bang deployments that fall apart.
-          </p>
+          <h3 class="diff-card__title">{{ __('solutions.diff2_title') }}</h3>
+          <p class="diff-card__text">{{ __('solutions.diff2_text') }}</p>
         </div>
         <div class="diff-card">
           <span class="diff-card__icon">🌏</span>
-          <h3 class="diff-card__title">Offshore-enabled cost control</h3>
-          <p class="diff-card__text">
-            Through our global development partners in Indonesia and beyond, we deliver enterprise-grade AI work
-            at a cost structure that SMBs can afford.
-          </p>
+          <h3 class="diff-card__title">{{ __('solutions.diff3_title') }}</h3>
+          <p class="diff-card__text">{{ __('solutions.diff3_text') }}</p>
         </div>
       </div>
     </div>
@@ -274,21 +242,19 @@
   {{-- ============== CTA ============== --}}
   <section class="section cta">
     <div class="container container--narrow">
-      <h2 class="cta__title">Not sure which solution fits?</h2>
-      <p class="cta__lead">
-        Book a free 30-minute AI assessment. We'll map your operations to realistic AI use cases and tell you what's worth building first.
-      </p>
+      <h2 class="cta__title">{{ __('solutions.cta_title') }}</h2>
+      <p class="cta__lead">{{ __('solutions.cta_lead') }}</p>
       <div class="cta__buttons">
-        <a href="{{ route('contact.index') }}" class="btn btn--primary btn--lg">Book free assessment</a>
-        <a href="{{ route('pricing.index') }}" class="btn btn--ghost btn--lg">See pricing</a>
+        <a href="{{ route('contact.index') }}" class="btn btn--primary btn--lg">{{ __('solutions.cta_primary') }}</a>
+        <a href="{{ route('pricing.index') }}" class="btn btn--ghost btn--lg">{{ __('solutions.cta_secondary') }}</a>
       </div>
-      <p class="cta__meta">No prior AI knowledge required. No commitment.</p>
+      <p class="cta__meta">{{ __('solutions.cta_meta') }}</p>
     </div>
   </section>
 
   <nav class="back-nav" aria-label="Page navigation">
     <div class="container">
-      <a href="{{ route('home') }}" class="btn btn--ghost back-nav__btn"><span class="back-nav__arrow" aria-hidden="true">←</span>Back to home</a>
+      <a href="{{ route('home') }}" class="btn btn--ghost back-nav__btn"><span class="back-nav__arrow" aria-hidden="true">←</span>{{ __('common.back_to_home') }}</a>
     </div>
   </nav>
 

@@ -1,0 +1,95 @@
+<?php
+
+return [
+    'title' => 'Harga | FTS AI — Paket integrasi AI untuk setiap tahap bisnis',
+    'description' => 'Harga FTS AI: dari chatbot AI pemula hingga pengembangan AI agent enterprise penuh. Paket transparan dengan deliverable yang jelas — atau scoping khusus untuk kebutuhan kompleks.',
+
+    'breadcrumb' => 'Harga',
+    'eyebrow' => 'HARGA',
+    'hero_title' => 'Harga transparan,<br><span class="accent">tanpa invoice mengejutkan</span>.',
+    'hero_lead' => 'Tiga paket awal yang mencakup kebutuhan integrasi AI paling umum. Setiap proyek dimulai dengan konsultasi gratis — kami akan merekomendasikan yang paling sesuai sebelum Anda berkomitmen.',
+
+    // Starter
+    'starter_badge' => 'Starter',
+    'starter_name' => 'Website + Chatbot',
+    'starter_tagline' => '3 halaman website profesional + chatbot kontak. Tanpa AI.',
+    'starter_currency' => 'mulai',
+    'starter_amount' => 'Rp 300.000',
+    'starter_period' => 'sekali bayar',
+    'starter_f1' => '3 halaman (Beranda, Tentang, Kontak)',
+    'starter_f2' => 'Widget chatbot kontak (non-AI)',
+    'starter_f3' => 'Desain responsif mobile-friendly',
+    'starter_f4' => 'Form kontak + notifikasi email',
+    'starter_f5' => '1 bulan dukungan pasca-launch',
+    'starter_f6' => 'Integrasi SEO',
+    'starter_cta' => 'Hubungi kami',
+
+    // Growth
+    'growth_badge' => 'Paling Populer',
+    'growth_name' => 'Website + AI Chatbot',
+    'growth_tagline' => 'Website lengkap dengan AI chatbot yang menjawab berdasarkan konten bisnis Anda.',
+    'growth_currency' => 'mulai',
+    'growth_amount' => 'Rp 800.000',
+    'growth_period' => 'sekali bayar',
+    'growth_f1' => 'Semua fitur Starter',
+    'growth_f2' => 'AI chatbot berbasis dokumen / FAQ bisnis Anda',
+    'growth_f3' => 'Integrasi ChatGPT / Claude',
+    'growth_f4' => 'Embed di website atau WhatsApp / LINE',
+    'growth_f5' => 'Dasbor admin untuk pembaruan konten',
+    'growth_f6' => '3 bulan dukungan pasca-launch',
+    'growth_cta' => 'Hubungi kami',
+
+    // Enterprise
+    'enterprise_badge' => 'Enterprise',
+    'enterprise_name' => 'Integrasi AI Penuh',
+    'enterprise_tagline' => 'Integrasi AI ke sistem bisnis yang sudah ada — otomasi dokumen, agen, dan lebih.',
+    'enterprise_currency' => 'harga',
+    'enterprise_amount' => 'custom',
+    'enterprise_f1' => 'Semua fitur Website + AI Chatbot',
+    'enterprise_f2' => 'Integrasi ke CRM / ERP / database existing',
+    'enterprise_f3' => 'Otomasi dokumen (invoice, kontrak, laporan)',
+    'enterprise_f4' => 'Alur kerja otomasi AI (n8n / Make)',
+    'enterprise_f5' => 'AI agent multi-langkah khusus',
+    'enterprise_f6' => 'Dukungan tim offshore tersedia',
+    'enterprise_cta' => 'Diskusi kebutuhan',
+
+    'pricing_note' => 'Semua harga merupakan estimasi awal dalam Rupiah. Harga final dikonfirmasi setelah konsultasi gratis. Opsi pengembangan offshore dapat mengurangi biaya hingga 40–60%.',
+
+    // Add-ons
+    'addons_eyebrow' => 'LAYANAN TAMBAHAN',
+    'addons_title' => 'Layanan tambahan',
+    'addons_lead' => 'Dapat ditambahkan ke paket mana saja sesuai kebutuhan.',
+    'addon1_label' => 'Pelatihan Penggunaan AI',
+    'addon1_desc' => 'Panduan penggunaan AI internal + workshop staff (online/offline)',
+    'addon1_price' => 'mulai Rp 500.000',
+    'addon2_label' => 'Dukungan Multibahasa',
+    'addon2_desc' => 'Chatbot merespons dalam Bahasa Indonesia, Inggris, dan Jepang',
+    'addon2_price' => 'mulai Rp 300.000',
+    'addon3_label' => 'Maintenance Bulanan',
+    'addon3_desc' => 'Pembaruan konten, pemeliharaan sistem, dan penyesuaian prompt AI',
+    'addon3_price' => 'mulai Rp 200.000/bln',
+    'addon4_label' => 'Konsultasi AI Diagnosis',
+    'addon4_desc' => 'Audit operasional + peta jalan adopsi AI yang diprioritaskan',
+    'addon4_price' => 'mulai Rp 500.000',
+
+    // FAQ
+    'faq_eyebrow' => 'FAQ',
+    'faq_title' => 'Pertanyaan umum',
+    'faq1_q' => 'Berapa lama durasi proyek tipikal?',
+    'faq1_a' => 'Chatbot Starter biasanya membutuhkan 3–4 minggu dari kickoff hingga launch. Paket AI Integration membutuhkan 6–10 minggu. Proyek AI agent khusus di-scope secara individual tetapi biasanya 3–6 bulan.',
+    'faq2_q' => 'Apakah saya perlu menyediakan API key OpenAI / Anthropic sendiri?',
+    'faq2_a' => 'Ya — kami menyarankan klien memegang API key mereka sendiri agar tidak pernah terkunci dengan kami. Kami akan membantu Anda mengatur penagihan dan menjelaskan implikasi biaya sebelum memulai.',
+    'faq3_q' => 'Apakah data perusahaan saya tetap aman dan privat?',
+    'faq3_a' => 'Tentu. Kami merancang solusi agar data proprietary Anda tetap berada di infrastruktur Anda. Kami tidak pernah mengirim dokumen Anda ke model pihak ketiga tanpa persetujuan dan tinjauan eksplisit Anda.',
+    'faq4_q' => 'Bisakah Anda bekerja dengan sistem existing kami (SAP, Salesforce, dll.)?',
+    'faq4_a' => 'Ya — integrasi dengan sistem bisnis yang ada adalah kekuatan inti kami. Kami telah menghubungkan AI ke berbagai ERP, CRM, dan sistem yang dibangun khusus selama bertahun-tahun.',
+    'faq5_q' => 'Bagaimana jika kami ingin memulai dengan skala yang lebih kecil dari paket Starter?',
+    'faq5_a' => 'Kami menawarkan AI Adoption Diagnostic berbayar (Rp 1.200.000) yang memetakan operasional Anda ke peluang AI tanpa harus berkomitmen untuk membangun. Banyak klien memulai dari situ lalu beralih ke paket.',
+
+    // CTA
+    'cta_title' => 'Mulai dengan konsultasi gratis.',
+    'cta_lead' => 'Kami akan meninjau operasional Anda, mengidentifikasi peluang AI yang realistis, dan memberikan estimasi ruang lingkup yang jujur — tanpa biaya dan tanpa komitmen.',
+    'cta_primary' => 'Jadwalkan konsultasi gratis',
+    'cta_secondary' => 'Jelajahi solusi',
+    'cta_meta' => 'Respons dalam 1 hari kerja',
+];

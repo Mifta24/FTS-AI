@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Contact | FTS AI')
-@section('description', 'Contact form for FTS AI (Fujiyama Technology Solutions). Send us inquiries about system development, web production, IT consulting, AI adoption support, and overseas expansion / offshore development support.')
+@section('title', __('contact.title'))
+@section('description', __('contact.description'))
 @section('body_class', 'page-contact')
 
 @push('styles')
@@ -202,12 +202,11 @@
 
   <section class="page-header">
     <div class="container page-header__inner">
-      <p class="breadcrumb"><a href="{{ route('home') }}">Home</a><span class="breadcrumb__sep">›</span>Contact</p>
-      <p class="page-header__eyebrow">CONTACT</p>
-      <h1 class="page-header__title">Contact</h1>
+      <p class="breadcrumb"><a href="{{ route('home') }}">{{ __('common.home') }}</a><span class="breadcrumb__sep">›</span>{{ __('contact.breadcrumb') }}</p>
+      <p class="page-header__eyebrow">{{ __('contact.eyebrow') }}</p>
+      <h1 class="page-header__title">{{ __('contact.page_title') }}</h1>
       <p class="page-header__lead">
-        System development, web production, IT consulting, AI adoption support, global support &mdash; feel free to reach out.<br class="hide-sp">
-        We will review your message and get back to you.
+        {!! __('contact.page_lead') !!}
       </p>
     </div>
   </section>
@@ -223,57 +222,57 @@
             @csrf
 
             <div class="contact-form__row">
-              <label for="form-company">Company <span class="opt">Optional</span></label>
-              <input type="text" id="form-company" name="company" autocomplete="organization" placeholder="Example Corp.">
+              <label for="form-company">{{ __('contact.form_company') }} <span class="opt">{{ __('common.optional') }}</span></label>
+              <input type="text" id="form-company" name="company" autocomplete="organization" placeholder="{{ __('contact.form_placeholder_company') }}">
             </div>
 
             <div class="contact-form__row">
-              <label for="form-name">Name <span class="req">Required</span></label>
-              <input type="text" id="form-name" name="name" required autocomplete="name" placeholder="Jane Doe">
+              <label for="form-name">{{ __('contact.form_name') }} <span class="req">{{ __('common.required') }}</span></label>
+              <input type="text" id="form-name" name="name" required autocomplete="name" placeholder="{{ __('contact.form_placeholder_name') }}">
             </div>
 
             <div class="contact-form__row">
-              <label for="form-email">Email <span class="req">Required</span></label>
-              <input type="email" id="form-email" name="email" required autocomplete="email" placeholder="example@example.com">
+              <label for="form-email">{{ __('contact.form_email') }} <span class="req">{{ __('common.required') }}</span></label>
+              <input type="email" id="form-email" name="email" required autocomplete="email" placeholder="{{ __('contact.form_placeholder_email') }}">
             </div>
 
             <div class="contact-form__row">
-              <label for="form-tel">Phone <span class="opt">Optional</span></label>
-              <input type="tel" id="form-tel" name="tel" autocomplete="tel" placeholder="000-0000-0000">
+              <label for="form-tel">{{ __('contact.form_tel') }} <span class="opt">{{ __('common.optional') }}</span></label>
+              <input type="tel" id="form-tel" name="tel" autocomplete="tel" placeholder="{{ __('contact.form_placeholder_tel') }}">
             </div>
 
             <div class="contact-form__row">
-              <label for="form-type">Inquiry type <span class="req">Required</span></label>
+              <label for="form-type">{{ __('contact.form_type') }} <span class="req">{{ __('common.required') }}</span></label>
               <select id="form-type" name="type" required>
-                <option value="">Please select</option>
-                <option>System development</option>
-                <option>Web production</option>
-                <option>IT consulting</option>
-                <option>AI adoption support</option>
-                <option>Global support</option>
-                <option>Other</option>
+                <option value="">{{ __('contact.select_placeholder') }}</option>
+                <option>{{ __('contact.select_system') }}</option>
+                <option>{{ __('contact.select_web') }}</option>
+                <option>{{ __('contact.select_consulting') }}</option>
+                <option>{{ __('contact.select_ai') }}</option>
+                <option>{{ __('contact.select_global') }}</option>
+                <option>{{ __('contact.select_other') }}</option>
               </select>
             </div>
 
             <div class="contact-form__row">
-              <label for="form-message">Message <span class="req">Required</span></label>
-              <textarea id="form-message" name="message" required placeholder="Please describe your current challenges or what you'd like to discuss."></textarea>
-              <span class="contact-form__hint">Even if your requirements aren't fully formed yet, feel free to write what you have.</span>
+              <label for="form-message">{{ __('contact.form_message') }} <span class="req">{{ __('common.required') }}</span></label>
+              <textarea id="form-message" name="message" required placeholder="{{ __('contact.form_placeholder_message') }}"></textarea>
+              <span class="contact-form__hint">{{ __('contact.form_hint') }}</span>
             </div>
 
             <div class="contact-form__consent">
               <label class="contact-form__checkbox" for="form-consent">
                 <input type="checkbox" id="form-consent" name="consent" required>
                 <span>
-                  I agree to the handling of personal information
-                  <span class="req">Required</span>
+                  {{ __('contact.form_consent') }}
+                  <span class="req">{{ __('common.required') }}</span>
                 </span>
               </label>
             </div>
 
             <div class="contact-form__submit">
-              <button type="submit" class="btn btn--blue btn--lg btn--no-arrow">Send message</button>
-              <p class="contact-form__note">A team member will respond within three business days.</p>
+              <button type="submit" class="btn btn--blue btn--lg btn--no-arrow">{{ __('contact.form_submit') }}</button>
+              <p class="contact-form__note">{{ __('contact.form_note') }}</p>
             </div>
           </form>
         </div>
@@ -281,19 +280,19 @@
         <aside class="contact-grid__side">
 
           <div class="contact-side-card">
-            <h2 class="contact-side-card__title">What you can consult on</h2>
+            <h2 class="contact-side-card__title">{{ __('contact.side_topics_title') }}</h2>
             <ul class="contact-topics">
-              <li>Business system development</li>
-              <li>Website production</li>
-              <li>Web system development</li>
-              <li>IT consulting</li>
-              <li>AI adoption support</li>
-              <li>Overseas talent and global partnerships</li>
+              <li>{{ __('contact.side_topic1') }}</li>
+              <li>{{ __('contact.side_topic2') }}</li>
+              <li>{{ __('contact.side_topic3') }}</li>
+              <li>{{ __('contact.side_topic4') }}</li>
+              <li>{{ __('contact.side_topic5') }}</li>
+              <li>{{ __('contact.side_topic6') }}</li>
             </ul>
           </div>
 
           <div class="contact-side-card">
-            <h2 class="contact-side-card__title">Company information</h2>
+            <h2 class="contact-side-card__title">{{ __('contact.side_company_title') }}</h2>
             <p class="contact-side-card__company">Fujiyama Technology Solutions</p>
             <address class="contact-side-card__address">
               Neo Soho Mall<br>
@@ -310,7 +309,7 @@
 
   <nav class="back-nav" aria-label="Page navigation">
     <div class="container">
-      <a href="{{ route('home') }}" class="btn btn--ghost back-nav__btn"><span class="back-nav__arrow" aria-hidden="true">←</span>Back to home</a>
+      <a href="{{ route('home') }}" class="btn btn--ghost back-nav__btn"><span class="back-nav__arrow" aria-hidden="true">←</span>{{ __('common.back_to_home') }}</a>
     </div>
   </nav>
 

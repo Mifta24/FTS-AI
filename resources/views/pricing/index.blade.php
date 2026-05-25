@@ -1,22 +1,19 @@
 @extends('layouts.app')
 
-@section('title', 'Pricing | FTS AI — AI integration packages for every stage')
-@section('description', 'FTS AI pricing: from a starter AI chatbot to full enterprise AI agent development. Transparent packages with clear deliverables — or custom scoping for complex needs.')
+@section('title', __('pricing.title'))
+@section('description', __('pricing.description'))
 
 @section('content')
 
   {{-- ============== PAGE HEADER ============== --}}
   <section class="ai-hero-bg">
     <div class="container ai-hero-bg__inner">
-      <p class="breadcrumb"><a href="{{ route('home') }}">Home</a><span class="breadcrumb__sep">›</span>Pricing</p>
-      <p class="page-header__eyebrow">PRICING</p>
+      <p class="breadcrumb"><a href="{{ route('home') }}">{{ __('common.home') }}</a><span class="breadcrumb__sep">›</span>{{ __('pricing.breadcrumb') }}</p>
+      <p class="page-header__eyebrow">{{ __('pricing.eyebrow') }}</p>
       <h1 class="page-header__title">
-        Transparent pricing,<br><span class="accent">no surprise invoices</span>.
+        {!! __('pricing.hero_title') !!}
       </h1>
-      <p class="page-header__lead">
-        Three starting packages that cover the most common AI integration needs.
-        Every engagement starts with a free assessment — we'll recommend the right fit before you commit.
-      </p>
+      <p class="page-header__lead">{{ __('pricing.hero_lead') }}</p>
     </div>
   </section>
 
@@ -28,83 +25,80 @@
         {{-- Starter --}}
         <article class="pricing-card">
           <div class="pricing-card__top">
-            <span class="pricing-card__badge">Starter</span>
-            <h3 class="pricing-card__name">Website + Chatbot</h3>
-            <p class="pricing-card__tagline">3 halaman website profesional + chatbot kontak. Tanpa AI.</p>
+            <span class="pricing-card__badge">{{ __('pricing.starter_badge') }}</span>
+            <h3 class="pricing-card__name">{{ __('pricing.starter_name') }}</h3>
+            <p class="pricing-card__tagline">{{ __('pricing.starter_tagline') }}</p>
             <div class="pricing-card__price">
-              <span class="pricing-card__currency">mulai</span>
-              <span class="pricing-card__amount">Rp 300.000</span>
-              <span class="pricing-card__period">sekali bayar</span>
+              <span class="pricing-card__currency">{{ __('pricing.starter_currency') }}</span>
+              <span class="pricing-card__amount">{{ __('pricing.starter_amount') }}</span>
+              <span class="pricing-card__period">{{ __('pricing.starter_period') }}</span>
             </div>
           </div>
           <ul class="pricing-card__features">
-            <li>3 halaman (Home, About, Contact)</li>
-            <li>Chatbot widget kontak (non-AI)</li>
-            <li>Desain responsif mobile-friendly</li>
-            <li>Form kontak + notifikasi email</li>
-            <li>1 bulan dukungan pasca-launch</li>
-            <li>Integrasi SEO</li>
+            <li>{{ __('pricing.starter_f1') }}</li>
+            <li>{{ __('pricing.starter_f2') }}</li>
+            <li>{{ __('pricing.starter_f3') }}</li>
+            <li>{{ __('pricing.starter_f4') }}</li>
+            <li>{{ __('pricing.starter_f5') }}</li>
+            <li>{{ __('pricing.starter_f6') }}</li>
           </ul>
           <div class="pricing-card__footer">
-            <a href="{{ route('contact.index') }}" class="btn btn--ghost pricing-card__btn">Hubungi kami</a>
+            <a href="{{ route('contact.index') }}" class="btn btn--ghost pricing-card__btn">{{ __('pricing.starter_cta') }}</a>
           </div>
         </article>
 
         {{-- Growth --}}
         <article class="pricing-card pricing-card--featured">
           <div class="pricing-card__top">
-            <span class="pricing-card__badge pricing-card__badge--featured">Paling Populer</span>
-            <h3 class="pricing-card__name">Website + AI Chatbot</h3>
-            <p class="pricing-card__tagline">Website lengkap dengan AI chatbot yang menjawab berdasarkan konten bisnis Anda.</p>
+            <span class="pricing-card__badge pricing-card__badge--featured">{{ __('pricing.growth_badge') }}</span>
+            <h3 class="pricing-card__name">{{ __('pricing.growth_name') }}</h3>
+            <p class="pricing-card__tagline">{{ __('pricing.growth_tagline') }}</p>
             <div class="pricing-card__price">
-              <span class="pricing-card__currency">mulai</span>
-              <span class="pricing-card__amount">Rp 800.000</span>
-              <span class="pricing-card__period">sekali bayar</span>
+              <span class="pricing-card__currency">{{ __('pricing.growth_currency') }}</span>
+              <span class="pricing-card__amount">{{ __('pricing.growth_amount') }}</span>
+              <span class="pricing-card__period">{{ __('pricing.growth_period') }}</span>
             </div>
           </div>
           <ul class="pricing-card__features">
-            <li>Semua fitur Starter</li>
-            <li>AI chatbot berbasis dokumen / FAQ bisnis Anda</li>
-            <li>Integrasi ChatGPT / Claude</li>
-            <li>Embed di website atau WhatsApp / LINE</li>
-            <li>Dashboard admin untuk update konten</li>
-            <li>3 bulan dukungan pasca-launch</li>
+            <li>{{ __('pricing.growth_f1') }}</li>
+            <li>{{ __('pricing.growth_f2') }}</li>
+            <li>{{ __('pricing.growth_f3') }}</li>
+            <li>{{ __('pricing.growth_f4') }}</li>
+            <li>{{ __('pricing.growth_f5') }}</li>
+            <li>{{ __('pricing.growth_f6') }}</li>
           </ul>
           <div class="pricing-card__footer">
-            <a href="{{ route('contact.index') }}" class="btn btn--blue pricing-card__btn">Hubungi kami</a>
+            <a href="{{ route('contact.index') }}" class="btn btn--blue pricing-card__btn">{{ __('pricing.growth_cta') }}</a>
           </div>
         </article>
 
         {{-- Enterprise --}}
         <article class="pricing-card">
           <div class="pricing-card__top">
-            <span class="pricing-card__badge">Enterprise</span>
-            <h3 class="pricing-card__name">AI Integration Penuh</h3>
-            <p class="pricing-card__tagline">Integrasi AI ke sistem bisnis yang sudah ada — otomasi dokumen, agen, dan lebih.</p>
+            <span class="pricing-card__badge">{{ __('pricing.enterprise_badge') }}</span>
+            <h3 class="pricing-card__name">{{ __('pricing.enterprise_name') }}</h3>
+            <p class="pricing-card__tagline">{{ __('pricing.enterprise_tagline') }}</p>
             <div class="pricing-card__price">
-              <span class="pricing-card__currency">harga</span>
-              <span class="pricing-card__amount">custom</span>
+              <span class="pricing-card__currency">{{ __('pricing.enterprise_currency') }}</span>
+              <span class="pricing-card__amount">{{ __('pricing.enterprise_amount') }}</span>
             </div>
           </div>
           <ul class="pricing-card__features">
-            <li>Semua fitur Website + AI Chatbot</li>
-            <li>Integrasi ke CRM / ERP / database existing</li>
-            <li>Otomasi dokumen (invoice, kontrak, laporan)</li>
-            <li>AI workflow otomatis (n8n / Make)</li>
-            <li>Custom AI agent multi-step</li>
-            <li>Dukungan tim offshore tersedia</li>
+            <li>{{ __('pricing.enterprise_f1') }}</li>
+            <li>{{ __('pricing.enterprise_f2') }}</li>
+            <li>{{ __('pricing.enterprise_f3') }}</li>
+            <li>{{ __('pricing.enterprise_f4') }}</li>
+            <li>{{ __('pricing.enterprise_f5') }}</li>
+            <li>{{ __('pricing.enterprise_f6') }}</li>
           </ul>
           <div class="pricing-card__footer">
-            <a href="{{ route('contact.index') }}" class="btn btn--primary pricing-card__btn">Diskusi kebutuhan</a>
+            <a href="{{ route('contact.index') }}" class="btn btn--primary pricing-card__btn">{{ __('pricing.enterprise_cta') }}</a>
           </div>
         </article>
 
       </div>
 
-      <p class="pricing-note">
-        Semua harga merupakan estimasi awal dalam Rupiah. Harga final dikonfirmasi setelah konsultasi gratis.
-        Opsi pengembangan offshore dapat mengurangi biaya hingga 40–60%.
-      </p>
+      <p class="pricing-note">{{ __('pricing.pricing_note') }}</p>
     </div>
   </section>
 
@@ -112,30 +106,30 @@
   <section class="section" style="background:var(--c-bg-soft);">
     <div class="container">
       <div class="section__head">
-        <span class="section__eyebrow">ADD-ONS</span>
-        <h2 class="section__title">Layanan tambahan</h2>
-        <p class="section__lead">Dapat ditambahkan ke paket mana saja sesuai kebutuhan.</p>
+        <span class="section__eyebrow">{{ __('pricing.addons_eyebrow') }}</span>
+        <h2 class="section__title">{{ __('pricing.addons_title') }}</h2>
+        <p class="section__lead">{{ __('pricing.addons_lead') }}</p>
       </div>
       <div class="addon-grid">
         <div class="addon-item">
-          <span class="addon-item__label">Pelatihan Penggunaan AI</span>
-          <span class="addon-item__desc">Panduan penggunaan AI internal + workshop staff (online/offline)</span>
-          <span class="addon-item__price">mulai Rp 500.000</span>
+          <span class="addon-item__label">{{ __('pricing.addon1_label') }}</span>
+          <span class="addon-item__desc">{{ __('pricing.addon1_desc') }}</span>
+          <span class="addon-item__price">{{ __('pricing.addon1_price') }}</span>
         </div>
         <div class="addon-item">
-          <span class="addon-item__label">Dukungan Multibahasa</span>
-          <span class="addon-item__desc">Chatbot merespons dalam Bahasa Indonesia, Inggris, dan Jepang</span>
-          <span class="addon-item__price">mulai Rp 300.000</span>
+          <span class="addon-item__label">{{ __('pricing.addon2_label') }}</span>
+          <span class="addon-item__desc">{{ __('pricing.addon2_desc') }}</span>
+          <span class="addon-item__price">{{ __('pricing.addon2_price') }}</span>
         </div>
         <div class="addon-item">
-          <span class="addon-item__label">Maintenance Bulanan</span>
-          <span class="addon-item__desc">Update konten, pemeliharaan sistem, dan penyesuaian prompt AI</span>
-          <span class="addon-item__price">mulai Rp 200.000/bln</span>
+          <span class="addon-item__label">{{ __('pricing.addon3_label') }}</span>
+          <span class="addon-item__desc">{{ __('pricing.addon3_desc') }}</span>
+          <span class="addon-item__price">{{ __('pricing.addon3_price') }}</span>
         </div>
         <div class="addon-item">
-          <span class="addon-item__label">Konsultasi AI Diagnosis</span>
-          <span class="addon-item__desc">Audit operasional + peta jalan adopsi AI yang diprioritaskan</span>
-          <span class="addon-item__price">mulai Rp 500.000</span>
+          <span class="addon-item__label">{{ __('pricing.addon4_label') }}</span>
+          <span class="addon-item__desc">{{ __('pricing.addon4_desc') }}</span>
+          <span class="addon-item__price">{{ __('pricing.addon4_price') }}</span>
         </div>
       </div>
     </div>
@@ -145,44 +139,29 @@
   <section class="section" style="background:#fff;">
     <div class="container container--narrow">
       <div class="section__head">
-        <span class="section__eyebrow">FAQ</span>
-        <h2 class="section__title">Common questions</h2>
+        <span class="section__eyebrow">{{ __('pricing.faq_eyebrow') }}</span>
+        <h2 class="section__title">{{ __('pricing.faq_title') }}</h2>
       </div>
       <div class="faq-list">
         <details class="faq-item">
-          <summary class="faq-item__q">How long does a typical project take?</summary>
-          <p class="faq-item__a">
-            A Starter chatbot typically takes 3–4 weeks from kickoff to launch.
-            AI Integration packages run 6–10 weeks. Custom agent projects are scoped individually but usually 3–6 months.
-          </p>
+          <summary class="faq-item__q">{{ __('pricing.faq1_q') }}</summary>
+          <p class="faq-item__a">{{ __('pricing.faq1_a') }}</p>
         </details>
         <details class="faq-item">
-          <summary class="faq-item__q">Do I need to provide my own OpenAI / Anthropic API keys?</summary>
-          <p class="faq-item__a">
-            Yes — we recommend clients hold their own API keys so you're never locked into us.
-            We'll help you set up billing and explain cost implications before we start.
-          </p>
+          <summary class="faq-item__q">{{ __('pricing.faq2_q') }}</summary>
+          <p class="faq-item__a">{{ __('pricing.faq2_a') }}</p>
         </details>
         <details class="faq-item">
-          <summary class="faq-item__q">Is my company's data kept private?</summary>
-          <p class="faq-item__a">
-            Absolutely. We architect solutions so your proprietary data stays in your infrastructure.
-            We never send your documents to third-party models without your explicit consent and review.
-          </p>
+          <summary class="faq-item__q">{{ __('pricing.faq3_q') }}</summary>
+          <p class="faq-item__a">{{ __('pricing.faq3_a') }}</p>
         </details>
         <details class="faq-item">
-          <summary class="faq-item__q">Can you work with our existing systems (SAP, Salesforce, etc.)?</summary>
-          <p class="faq-item__a">
-            Yes — integration with existing business systems is our core strength.
-            We've connected AI to a wide range of ERPs, CRMs, and custom-built systems over the years.
-          </p>
+          <summary class="faq-item__q">{{ __('pricing.faq4_q') }}</summary>
+          <p class="faq-item__a">{{ __('pricing.faq4_a') }}</p>
         </details>
         <details class="faq-item">
-          <summary class="faq-item__q">What if we want to start smaller than the Starter package?</summary>
-          <p class="faq-item__a">
-            We offer a paid AI Adoption Diagnostic ($1,200) that maps your operations to AI opportunities
-            without committing to a build. Many clients start there and then move into a package.
-          </p>
+          <summary class="faq-item__q">{{ __('pricing.faq5_q') }}</summary>
+          <p class="faq-item__a">{{ __('pricing.faq5_a') }}</p>
         </details>
       </div>
     </div>
@@ -191,21 +170,19 @@
   {{-- ============== CTA ============== --}}
   <section class="section cta">
     <div class="container container--narrow">
-      <h2 class="cta__title">Start with a free assessment.</h2>
-      <p class="cta__lead">
-        We'll review your operations, identify realistic AI opportunities, and give you an honest scope estimate — at no cost and no commitment.
-      </p>
+      <h2 class="cta__title">{{ __('pricing.cta_title') }}</h2>
+      <p class="cta__lead">{{ __('pricing.cta_lead') }}</p>
       <div class="cta__buttons">
-        <a href="{{ route('contact.index') }}" class="btn btn--primary btn--lg">Book free assessment</a>
-        <a href="{{ route('solutions.index') }}" class="btn btn--ghost btn--lg">Browse solutions</a>
+        <a href="{{ route('contact.index') }}" class="btn btn--primary btn--lg">{{ __('pricing.cta_primary') }}</a>
+        <a href="{{ route('solutions.index') }}" class="btn btn--ghost btn--lg">{{ __('pricing.cta_secondary') }}</a>
       </div>
-      <p class="cta__meta">Response within 1 business day</p>
+      <p class="cta__meta">{{ __('pricing.cta_meta') }}</p>
     </div>
   </section>
 
   <nav class="back-nav" aria-label="Page navigation">
     <div class="container">
-      <a href="{{ route('home') }}" class="btn btn--ghost back-nav__btn"><span class="back-nav__arrow" aria-hidden="true">←</span>Back to home</a>
+      <a href="{{ route('home') }}" class="btn btn--ghost back-nav__btn"><span class="back-nav__arrow" aria-hidden="true">←</span>{{ __('common.back_to_home') }}</a>
     </div>
   </nav>
 

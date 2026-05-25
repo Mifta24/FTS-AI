@@ -17,34 +17,34 @@
       </div>
 
       <div class="site-footer__col">
-        <h4>SOLUTIONS</h4>
+        <h4>{{ __('common.footer_solutions') }}</h4>
         <ul>
-          <li><a href="{{ route('solutions.index') }}">AI Chatbot</a></li>
-          <li><a href="{{ route('solutions.index') }}">Document Automation</a></li>
-          <li><a href="{{ route('solutions.index') }}">Internal Copilot</a></li>
-          <li><a href="{{ route('solutions.index') }}">Process Automation</a></li>
-          <li><a href="{{ route('solutions.index') }}">Custom AI Agent</a></li>
-          <li><a href="{{ route('pricing.index') }}">Pricing</a></li>
+          <li><a href="{{ route('solutions.index') }}">{{ __('nav.ai_chatbot') }}</a></li>
+          <li><a href="{{ route('solutions.index') }}">{{ __('nav.doc_automation') }}</a></li>
+          <li><a href="{{ route('solutions.index') }}">{{ __('nav.internal_copilot') }}</a></li>
+          <li><a href="{{ route('solutions.index') }}">{{ __('nav.process_automation') }}</a></li>
+          <li><a href="{{ route('solutions.index') }}">{{ __('nav.custom_agent') }}</a></li>
+          <li><a href="{{ route('pricing.index') }}">{{ __('nav.pricing') }}</a></li>
         </ul>
       </div>
 
       <div class="site-footer__col">
-        <h4>SITE MAP</h4>
+        <h4>{{ __('common.footer_sitemap') }}</h4>
         <ul>
-          <li><a href="{{ route('home') }}">Home</a></li>
-          <li><a href="{{ route('service.index') }}">Services</a></li>
-          <li><a href="{{ route('blog.index') }}">Blog</a></li>
+          <li><a href="{{ route('home') }}">{{ __('nav.home') }}</a></li>
+          <li><a href="{{ route('service.index') }}">{{ __('nav.services') }}</a></li>
+          <li><a href="{{ route('blog.index') }}">{{ __('nav.blog') }}</a></li>
           <li><a href="{{ route('works.index') }}">Works</a></li>
-          <li><a href="{{ route('company.index') }}">Company</a></li>
-          <li><a href="{{ route('news.index') }}">News</a></li>
-          <li><a href="{{ route('contact.index') }}">Contact</a></li>
+          <li><a href="{{ route('company.index') }}">{{ __('nav.company') }}</a></li>
+          <li><a href="{{ route('news.index') }}">{{ __('nav.news') }}</a></li>
+          <li><a href="{{ route('contact.index') }}">{{ __('nav.contact') }}</a></li>
         </ul>
       </div>
 
     </div>
 
     <div class="site-footer__bottom">
-      <span>© {{ date('Y') }} Fujiyama Technology Solutions. All Rights Reserved.</span>
+      <span>{{ __('common.footer_copyright', ['year' => date('Y')]) }}</span>
     </div>
   </div>
 </footer>

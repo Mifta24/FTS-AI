@@ -1,6 +1,15 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+
+Route::post('language/{locale}', function (Request $request, string $locale) {
+    if (in_array($locale, ['en', 'id'])) {
+        session(['locale' => $locale]);
+    }
+
+    return back();
+})->name('language.switch');
 
 Route::view('/', 'home')->name('home');
 Route::view('message', 'message')->name('message');
