@@ -6,6 +6,7 @@
 <title>@yield('title', 'FTS AI')</title>
 <meta name="description" content="@yield('description', 'FTS AI | Fujiyama Technology Solutions')">
 <meta name="theme-color" content="#0F2A55">
+<meta name="csrf-token" content="{{ csrf_token() }}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">

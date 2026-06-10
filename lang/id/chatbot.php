@@ -74,4 +74,9 @@ return [
     'contact_question' => 'Hubungi kami',
     'contact_answer' => "Tim kami siap membantu! 😊\n\nKlik tombol di bawah untuk mengisi form kontak, atau hubungi kami langsung.\n\nKonsultasi awal dan estimasi harga GRATIS — tanpa komitmen.",
     'opt_back_to_menu' => '← Kembali ke menu',
+
+    // AI input
+    'input_placeholder' => 'Ketik pertanyaan Anda...',
+    'send_label' => 'Kirim',
+    'ai_error' => 'Maaf, terjadi kesalahan. Silakan coba lagi.',
 ];

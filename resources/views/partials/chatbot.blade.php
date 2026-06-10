@@ -64,6 +64,22 @@
 
     {{-- Input area --}}
     <div class="chatbot__footer">
+      <form class="chatbot__input-wrap" id="chatbotForm" autocomplete="off">
+        <input
+          type="text"
+          class="chatbot__input"
+          id="chatbotInput"
+          placeholder="{{ __('chatbot.input_placeholder') }}"
+          maxlength="500"
+          autocomplete="off"
+        >
+        <button type="submit" class="chatbot__send" id="chatbotSend" aria-label="{{ __('chatbot.send_label') }}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="22" y1="2" x2="11" y2="13"/>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+          </svg>
+        </button>
+      </form>
       <a href="{{ route('contact.index') }}" class="chatbot__contact-btn">
         {{ __('chatbot.contact_btn') }}
       </a>
@@ -71,6 +87,13 @@
 
   </div>
 </div>
+
+{{-- Konfigurasi chatbot --}}
+<script>
+window.CHATBOT_CONFIG = {
+  chatUrl: '{{ route('chatbot.chat') }}',
+};
+</script>
 
 {{-- Data percakapan --}}
 <script>

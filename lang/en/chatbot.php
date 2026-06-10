@@ -74,4 +74,9 @@ return [
     'contact_question' => 'Contact us',
     'contact_answer' => "Our team is ready to help! 😊\n\nClick the button below to fill out the contact form, or reach out directly.\n\nInitial consultation and price estimate are FREE — no commitment.",
     'opt_back_to_menu' => '← Back to menu',
+
+    // AI input
+    'input_placeholder' => 'Type your question...',
+    'send_label' => 'Send',
+    'ai_error' => 'Sorry, something went wrong. Please try again.',
 ];

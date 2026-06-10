@@ -71,13 +71,18 @@
   // Chatbot Widget
   // =====================================================================
   (function initChatbot() {
-    var wrap    = document.getElementById('chatbot');
-    var toggle  = document.getElementById('chatbotToggle');
-    var box     = document.getElementById('chatbotBox');
-    var closeBtn= document.getElementById('chatbotClose');
-    var messages= document.getElementById('chatbotMessages');
-    var badge   = document.getElementById('chatbotBadge');
-    var data    = window.CHATBOT_DATA || {};
+    var wrap     = document.getElementById('chatbot');
+    var toggle   = document.getElementById('chatbotToggle');
+    var box      = document.getElementById('chatbotBox');
+    var closeBtn = document.getElementById('chatbotClose');
+    var messages = document.getElementById('chatbotMessages');
+    var badge    = document.getElementById('chatbotBadge');
+    var form     = document.getElementById('chatbotForm');
+    var input    = document.getElementById('chatbotInput');
+    var sendBtn  = document.getElementById('chatbotSend');
+    var data     = window.CHATBOT_DATA || {};
+    var config   = window.CHATBOT_CONFIG || {};
+    var aiHistory = [];
 
     if (!wrap || !toggle || !box) return;
 
@@ -111,6 +116,11 @@
       closeBtn.addEventListener('click', closeChat);
     }
 
+    function getCsrf() {
+      var meta = document.querySelector('meta[name="csrf-token"]');
+      return meta ? meta.getAttribute('content') : '';
+    }
+
     function appendUserMsg(text) {
       var el = document.createElement('div');
       el.className = 'chatbot__msg chatbot__msg--user';
@@ -125,9 +135,88 @@
       messages.appendChild(el);
     }
 
+    function appendBotMsgFormatted(text) {
+      var el = document.createElement('div');
+      el.className = 'chatbot__msg chatbot__msg--bot';
+      String(text).split('\n').forEach(function (line, i) {
+        if (i > 0) { el.appendChild(document.createElement('br')); }
+        el.appendChild(document.createTextNode(line));
+      });
+      messages.appendChild(el);
+    }
+
+    function showTyping() {
+      var el = document.createElement('div');
+      el.className = 'chatbot__msg chatbot__msg--bot chatbot__typing';
+      el.id = 'chatbotTyping';
+      el.innerHTML = '<span></span><span></span><span></span>';
+      messages.appendChild(el);
+      scrollToBottom();
+    }
+
+    function hideTyping() {
+      var el = document.getElementById('chatbotTyping');
+      if (el) { el.remove(); }
+    }
+
+    function setInputBusy(busy) {
+      if (input) { input.disabled = busy; }
+      if (sendBtn) { sendBtn.disabled = busy; }
+    }
+
+    function sendToAI(message) {
+      if (!config.chatUrl) { return; }
+
+      aiHistory.push({ role: 'user', content: message });
+      if (aiHistory.length > 8) { aiHistory = aiHistory.slice(-8); }
+
+      showTyping();
+      setInputBusy(true);
+
+      fetch(config.chatUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+          'X-CSRF-TOKEN': getCsrf(),
+        },
+        body: JSON.stringify({
+          message: message,
+          history: aiHistory.slice(0, -1),
+        }),
+      })
+      .then(function (res) { return res.json(); })
+      .then(function (json) {
+        hideTyping();
+        setInputBusy(false);
+        var reply = json.reply || 'Sorry, something went wrong.';
+        aiHistory.push({ role: 'assistant', content: reply });
+        appendBotMsgFormatted(reply);
+        scrollToBottom();
+      })
+      .catch(function () {
+        hideTyping();
+        setInputBusy(false);
+        appendBotMsg('Sorry, I could not connect. Please try again.');
+        scrollToBottom();
+      });
+    }
+
+    if (form && input) {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var msg = input.value.trim();
+        if (!msg) { return; }
+        input.value = '';
+        var optWrap = messages.querySelector('.chatbot__options');
+        if (optWrap) { optWrap.remove(); }
+        sendToAI(msg);
+      });
+    }
+
     function renderOptions(options, ctaLink) {
       var old = messages.querySelector('.chatbot__options');
-      if (old) old.remove();
+      if (old) { old.remove(); }
 
       var optWrap = document.createElement('div');
       optWrap.className = 'chatbot__options';
@@ -144,9 +233,7 @@
 
       if (ctaLink) {
         var footer = box.querySelector('.chatbot__footer');
-        if (footer) {
-          footer.style.display = 'block';
-        }
+        if (footer) { footer.style.display = 'block'; }
       }
 
       bindOptions();
@@ -155,7 +242,7 @@
 
     function goHome() {
       var old = messages.querySelector('.chatbot__options');
-      if (old) old.remove();
+      if (old) { old.remove(); }
 
       var optWrap = document.createElement('div');
       optWrap.className = 'chatbot__options';
@@ -164,7 +251,7 @@
         { key: 'pricing',    label: '💰 Berapa harganya?' },
         { key: 'about',      label: '🏢 Tentang FTS AI' },
         { key: 'ai_chatbot', label: '🤖 Apa itu AI Chatbot?' },
-        { key: 'contact',    label: '📩 Hubungi kami' }
+        { key: 'contact',    label: '📩 Hubungi kami' },
       ];
       homeKeys.forEach(function (opt) {
         var btn = document.createElement('button');
@@ -186,19 +273,19 @@
       }
 
       var item = data[key];
-      if (!item) return;
+      if (!item) { return; }
 
-      if (item.question) appendUserMsg(item.question);
+      if (item.question) { appendUserMsg(item.question); }
 
       setTimeout(function () {
-        if (item.answer) appendBotMsg(item.answer);
+        if (item.answer) { appendBotMsg(item.answer); }
 
         if (item.options && item.options.length) {
           renderOptions(item.options, item.cta);
         }
         if (item.cta) {
           var footer = box.querySelector('.chatbot__footer');
-          if (footer) footer.style.display = 'block';
+          if (footer) { footer.style.display = 'block'; }
         }
         scrollToBottom();
       }, 260);
@@ -206,7 +293,7 @@
 
     function bindOptions() {
       var optWrap = messages.querySelector('.chatbot__options');
-      if (!optWrap) return;
+      if (!optWrap) { return; }
       optWrap.querySelectorAll('.chatbot__opt').forEach(function (btn) {
         btn.addEventListener('click', function () {
           var key = btn.getAttribute('data-key');

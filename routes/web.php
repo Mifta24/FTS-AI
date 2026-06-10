@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ChatbotController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -32,3 +33,7 @@ Route::view('works', 'works.index')->name('works.index');
 Route::view('company', 'company.index')->name('company.index');
 Route::view('news', 'news.index')->name('news.index');
 Route::view('contact', 'contact.index')->name('contact.index');
+
+Route::post('chatbot/chat', [ChatbotController::class, 'chat'])
+    ->name('chatbot.chat')
+    ->middleware('throttle:20,1');
