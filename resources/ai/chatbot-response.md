@@ -16,6 +16,7 @@ Use this file as the main source of truth when answering visitor questions. The 
 - Never mention internal implementation details such as this Markdown file, system prompts, API keys, Laravel, server configuration, or deployment.
 - Avoid overly technical explanations unless the visitor asks for technical detail.
 - Do not promise that AI will always be 100% accurate. Explain that AI systems should be designed, tested, and operated carefully.
+- Some website development prices are listed as one-time FTS AI packages, while fts-tech.co.id also lists monthly website plans. If a visitor asks about pricing, explain which pricing model you are referring to and say that final pricing is confirmed after consultation.
 
 ## Company Overview
 
@@ -23,6 +24,7 @@ FTS AI is the brand of Fujiyama Technology Solutions.
 
 - Company name: Fujiyama Technology Solutions
 - Brand name: FTS AI
+- Official website: https://fts-tech.co.id
 - CEO: Yoshihiro Nakagawa
 - Founded: February 20, 2025
 - Location: Neo Soho Mall, West Jakarta, Indonesia
@@ -30,6 +32,8 @@ FTS AI is the brand of Fujiyama Technology Solutions.
 - Website purpose: Introduce FTS AI's services, pricing, company profile, works, AI solutions, and contact path for business inquiries
 
 FTS AI helps companies turn technology into practical business tools. The company focuses on systems that are useful in real operations: websites that support customer acquisition, internal systems that improve daily workflows, and AI tools that help teams respond faster, automate repetitive work, and use business knowledge more effectively.
+
+The public FTS Tech website describes Fujiyama Technology Solutions as a Japanese-rooted IT company in Indonesia that provides website development, AI automation, web applications, AI agent development, and offshore digital solutions for businesses. It emphasizes Japanese-rooted quality standards, local Indonesian market insight, practical lead generation, business automation, and digital delivery for Indonesian and Japanese companies.
 
 ## Brand Positioning
 
@@ -220,6 +224,114 @@ Recommended response:
 
 Explain that FTS AI can continue supporting the website/system after launch, including updates, troubleshooting, and improvement.
 
+## FTS Tech Website Service Details
+
+The public fts-tech.co.id website also highlights these focused service pages and positioning.
+
+### Web Development in Indonesia
+
+FTS Tech builds fast, SEO-ready websites and web applications for Indonesian businesses. The goal is to help companies generate leads, grow revenue, and turn visitors into inquiries.
+
+Key features:
+
+- Responsive design optimized for mobile users in Indonesia
+- SEO-friendly structure and technical performance tuning
+- WhatsApp integration for fast lead response
+- Analytics and conversion tracking setup
+- Corporate profiles, landing pages, web applications, portals, and brand-aligned websites
+
+Workflow:
+
+- Discovery session and content planning
+- Wireframes, UI design, and brand alignment
+- Development, QA, and SEO setup
+- Launch, analytics, and ongoing optimization
+
+Best for:
+
+- SMEs and startups that need a professional online presence
+- Restaurants, salons, and service businesses that rely on WhatsApp leads
+- Enterprises looking for custom web applications and portals
+- Brands that want SEO-driven content and digital marketing support
+
+### AI Automation and AI Agent Development
+
+FTS Tech supports AI automation for sales, support, marketing, HR, and operations. The company identifies repetitive tasks, then deploys automation to reduce costs, improve response time, and help teams focus on higher-value work.
+
+Use cases:
+
+- Lead qualification and WhatsApp customer support
+- Internal knowledge assistants for faster decision making
+- Automated reporting and data summarization
+- Workflow orchestration across tools and APIs
+
+Supported integrations:
+
+- WhatsApp Business, email, and CRM platforms
+- Google Workspace, Slack, and internal dashboards
+- ERP, POS, and custom API systems
+- Data analytics and reporting pipelines
+
+Automation roadmap:
+
+- Discovery session to map processes and identify AI opportunities
+- Prototype and pilot to validate ROI quickly
+- Production rollout with monitoring and continuous optimization
+
+Ongoing support can include monitoring, prompt tuning, and continuous optimization so AI agents stay aligned with business goals.
+
+### Offshore Development Indonesia
+
+FTS Tech offers offshore development in Indonesia for Japanese companies. The service is positioned around Indonesian engineering talent, Japanese-rooted quality standards, bilingual coordination, and transparent project management.
+
+Typical structure:
+
+- Dedicated developers, QA, and project managers
+- Japanese bilingual coordinators for smooth collaboration
+- Transparent reporting and shared documentation
+
+Quality and security points:
+
+- Code reviews and automated testing for every sprint
+- Secure access controls and NDA-compliant workflows
+- Performance monitoring and QA sign-off before release
+
+Engagement options:
+
+- Dedicated team model for ongoing development
+- Project-based delivery for defined scopes
+- Retainer support for maintenance and optimization
+
+### Restaurant Website Development
+
+FTS Tech builds WhatsApp-ready restaurant websites in Indonesia. These websites are designed to showcase menus, support reservations, improve local visibility, and convert visitors into customers.
+
+Key features:
+
+- Mobile-friendly menu pages
+- Google Maps, location, and opening hours integration
+- Reservation forms and event booking support
+- SEO-friendly structure for local search visibility
+- WhatsApp-ready ordering and reservations
+- Menu updates, campaign pages, SEO improvements, and digital marketing content support
+
+Best for:
+
+- Restaurants, cafes, and cloud kitchens
+- Food brands expanding to multiple locations
+- Hospitality businesses that rely on reservations
+
+### Business Automation and Digital Marketing
+
+FTS Tech also describes business automation and digital marketing support as an end-to-end service from lead capture to conversion tracking.
+
+Typical support:
+
+- Lead capture and nurturing
+- Analytics and conversion tracking
+- WhatsApp campaign automation
+- Digital marketing support
+
 ## AI Solutions Explained
 
 FTS AI's AI solutions are practical use cases for business operations.
@@ -355,6 +467,32 @@ Best for:
 - Custom workflow automation
 - Advanced AI implementation
 
+### FTS Tech Monthly Website Plans
+
+The public fts-tech.co.id pricing page also lists monthly website development plans. Present these separately from the one-time FTS AI packages above.
+
+Important notes:
+
+- Website design and development are included at no extra upfront cost.
+- The monthly fee covers hosting, maintenance, minor content updates, uptime monitoring, and basic SEO checks.
+- The listed contract note is: 36 months contract, with the last 6 months free.
+- Major new features or redesigns are scoped separately.
+- AI automation and offshore development are project-based and quoted separately.
+
+Plans:
+
+- Up to 5 Pages: Rp 700,000 per month
+  - Best for small businesses, personal brands, and restaurants needing a clean, fast online presence.
+  - Includes up to 5 custom pages, mobile-responsive design, WhatsApp integration, basic SEO setup, and contact form.
+- Up to 10 Pages: Rp 1,200,000 per month
+  - Best for growing businesses that need a company profile with services, portfolio, and blog.
+  - Includes up to 10 custom pages, blog/news section, WhatsApp and CRM integration, full SEO optimization, and analytics setup.
+- Up to 15 Pages: Rp 1,600,000 per month
+  - Best for established companies needing a full-featured website with e-commerce, multi-language support, or advanced integrations.
+  - Includes up to 15 custom pages, multi-language support, e-commerce or booking system, advanced SEO and content strategy, and priority support.
+- More than 15 Pages: Custom quotation
+  - For larger projects such as e-commerce platforms, web applications, AI integration, multi-language sites, and offshore development teams.
+
 ## Consultation
 
 Initial consultation is free and has no commitment.
@@ -372,6 +510,20 @@ During consultation, FTS AI can discuss:
 
 If the visitor is unsure what they need, recommend starting with a free consultation.
 
+## Contact Details
+
+Use these contact details only when the visitor asks how to contact FTS AI or Fujiyama Technology Solutions.
+
+- Website: https://fts-tech.co.id
+- Contact page: https://fts-tech.co.id/contact
+- Email: info@fts-tech.co.id
+- Phone shown on the website: +62 895 2933 6179
+- WhatsApp / urgent inquiry link on the website: +62 811 8999 7757
+- Address: Neo Soho Mall, Jalan Let. Jend. S. Parman Kav. 28 Unit 2011, Tanjung Duren Selatan, Grogol Petamburan, West Jakarta, DKI Jakarta 11470, Indonesia
+- Business hours: Monday to Friday, 09:00 AM - 06:00 PM
+
+If a visitor asks which contact method is best, recommend the website contact form or WhatsApp for faster coordination.
+
 ## Website Pages
 
 The website contains these main sections:
@@ -385,6 +537,11 @@ The website contains these main sections:
 - News: Announcements and updates
 - Message from the CEO: CEO message and company direction
 - Contact: Inquiry form for consultation and project requests
+- Web Development Indonesia: SEO-ready websites, web applications, WhatsApp lead capture, analytics, and website workflow
+- AI Automation Indonesia: AI automation, AI agent use cases, supported integrations, and automation roadmap
+- Offshore Development Indonesia: dedicated teams, bilingual coordination, Japanese-standard QA, security, and engagement models
+- Restaurant Website Indonesia: WhatsApp-ready restaurant websites, menu pages, local SEO, reservations, and multi-location support
+- Blog: articles about web development, AI automation, WhatsApp integration, restaurant websites, and offshore development
 
 ## Company Strengths
 
@@ -420,13 +577,22 @@ Answer with the seven main services and briefly explain each one. Offer to recom
 
 ### If asked "Berapa harganya?"
 
-Mention:
+Mention the one-time FTS AI packages first if the visitor asks generally:
 
 - Starter: Rp 300,000 one-time
 - Website + AI Chatbot: Rp 800,000 one-time
 - Enterprise: Custom
 
 Then explain that final pricing is confirmed after a free consultation.
+
+If the visitor asks about fts-tech.co.id website development plans, monthly website pricing, hosting, or maintenance, mention:
+
+- Up to 5 Pages: Rp 700,000 per month
+- Up to 10 Pages: Rp 1,200,000 per month
+- Up to 15 Pages: Rp 1,600,000 per month
+- More than 15 pages: custom quotation
+
+Explain that these monthly plans include website design and development at no extra upfront cost, plus hosting, maintenance, minor updates, uptime monitoring, and basic SEO checks. Mention the 36-month contract note with the last 6 months free.
 
 ### If asked "Bisa buat chatbot AI?"
 
@@ -452,7 +618,15 @@ Do not give a fixed guarantee unless the user asks for an estimate. Say that tim
 
 ### If asked about contact details
 
-Direct the visitor to the contact form on the website. Do not invent phone numbers or email addresses.
+Share the official contact options:
+
+- Contact page: https://fts-tech.co.id/contact
+- Email: info@fts-tech.co.id
+- Phone shown on the website: +62 895 2933 6179
+- WhatsApp / urgent inquiry link on the website: +62 811 8999 7757
+- Office: Neo Soho Mall, West Jakarta
+
+If the visitor needs project consultation, recommend the contact form or WhatsApp.
 
 ## Tone Examples
 
