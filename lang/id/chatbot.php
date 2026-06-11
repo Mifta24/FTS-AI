@@ -62,7 +62,7 @@ return [
 
     // About
     'about_question' => 'Tentang FTS AI',
-    'about_answer' => "FTS AI adalah brand dari Fujiyama Technology Solutions.\n\nBerdiri: 20 April 1989\nCEO: Yoshihiro Nakagawa\nLokasi: Neo Soho Mall, West Jakarta, Indonesia\n\nKami menggabungkan pengalaman puluhan tahun di system development dengan kemampuan AI dan global support.",
+    'about_answer' => "FTS AI adalah brand dari Fujiyama Technology Solutions.\n\nBerdiri: 20 Februari 2025\nCEO: Yoshihiro Nakagawa\nLokasi: Neo Soho Mall, West Jakarta, Indonesia\n\nKami menggabungkan system development, produksi web, konsultasi IT, adopsi AI, dan global support untuk membantu bisnis membangun solusi teknologi yang praktis.",
     'opt_see_services' => '🛠 Lihat layanan',
 
     // AI Chatbot

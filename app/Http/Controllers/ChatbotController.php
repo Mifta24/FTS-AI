@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Http;
 
 class ChatbotController extends Controller
@@ -32,7 +33,7 @@ class ChatbotController extends Controller
         ])->post(config('services.ai.base_url').'/chat/completions', [
             'model' => config('services.ai.model'),
             'messages' => $messages,
-            'max_tokens' => 500,
+            'max_tokens' => 900,
             'temperature' => 0.7,
         ]);
 
@@ -47,37 +48,12 @@ class ChatbotController extends Controller
 
     private function buildSystemPrompt(): string
     {
-        return <<<'PROMPT'
-You are a friendly customer support assistant for FTS AI (Fujiyama Technology Solutions).
-Answer questions concisely and professionally. Reply in the same language the user writes in (Indonesian or English).
+        $promptPath = resource_path('ai/chatbot-response.md');
 
-## About FTS AI
-- Full name: Fujiyama Technology Solutions
-- Brand: FTS AI
-- Founded: February 20, 2025
-- CEO: Yoshihiro Nakagawa
-- Location: Neo Soho Mall, West Jakarta, Indonesia
+        if (File::exists($promptPath)) {
+            return File::get($promptPath);
+        }
 
-## Services
-1. Custom System Development – Sales & inventory, CRM, internal systems, legacy improvements
-2. Web & App Production – Corporate sites, booking/contact forms, web systems with admin dashboards
-3. IT Consulting – Technology strategy, system assessment, digital transformation
-4. AI Adoption Support – FAQ chatbots, document automation, internal copilot, multi-step AI agents
-5. Global Support – Multilingual support, cross-border operations
-6. Packaged Software & Services – Ready-to-use software solutions
-7. HR & Operations Support – HR management and operational support
-
-## Pricing
-- Starter: Rp 300,000 (one-time) — 3 pages + non-AI chatbot + responsive design + contact form + 1 month support
-- AI Chatbot: Rp 800,000 (one-time) — All Starter features + AI chatbot + ChatGPT/Claude integration + WhatsApp/LINE embed + admin dashboard + 3 months support
-- Enterprise: Custom pricing — Full AI integration into existing systems
-
-Initial consultation is FREE with no commitment.
-
-## Guidelines
-- Keep responses concise (2-4 sentences unless more detail is truly needed)
-- If asked something outside your knowledge, suggest contacting FTS AI directly via the contact form
-- Never make up prices, features, or contact details not listed above
-PROMPT;
+        return 'You are a friendly customer support assistant for FTS AI. Reply in the same language as the visitor and suggest using the contact form for details outside your knowledge.';
     }
 }
