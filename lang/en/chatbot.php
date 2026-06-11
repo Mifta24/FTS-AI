@@ -62,7 +62,7 @@ return [
 
     // About
     'about_question' => 'About FTS AI',
-    'about_answer' => "FTS AI is the brand of Fujiyama Technology Solutions.\n\nFounded: April 20, 1989\nCEO: Takakazu Kaburagi\nLocation: Neo Soho Mall, West Jakarta, Indonesia\n\nWe combine decades of system development experience with AI capabilities and global support.",
+    'about_answer' => "FTS AI is the brand of Fujiyama Technology Solutions.\n\nFounded: April 20, 1989\nCEO: Yoshihiro Nakagawa\nLocation: Neo Soho Mall, West Jakarta, Indonesia\n\nWe combine decades of system development experience with AI capabilities and global support.",
     'opt_see_services' => '🛠 See services',
 
     // AI Chatbot

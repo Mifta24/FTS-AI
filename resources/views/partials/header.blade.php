@@ -1,7 +1,7 @@
 <header class="site-header">
   <div class="site-header__inner">
     <a href="{{ route('home') }}" class="site-header__logo" aria-label="FTS AI – Back to top">
-      {{-- <img src="{{ asset('images/apricot-logo.png') }}" alt="FTS AI logo" class="site-header__logo-img"> --}}
+      <img src="{{ asset('images/logo.png') }}" alt="FTS AI logo" class="site-header__logo-img">
       <span class="site-header__logo-text">
         FTS AI<small>Fujiyama Technology Solutions</small>
       </span>

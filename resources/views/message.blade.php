@@ -22,7 +22,7 @@
       <div class="message-grid">
 
         <div class="message-grid__photo">
-          <img src="{{ asset('images/representative-kaburagi.png') }}"
+          <img src="{{ asset('images/representative-yoshihiro-nakagawa.png') }}"
                alt="CEO of Fujiyama Technology Solutions"
                class="message-photo-img"
                loading="lazy"

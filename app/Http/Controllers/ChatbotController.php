@@ -54,8 +54,8 @@ Answer questions concisely and professionally. Reply in the same language the us
 ## About FTS AI
 - Full name: Fujiyama Technology Solutions
 - Brand: FTS AI
-- Founded: April 20, 1989
-- CEO: Takakazu Kaburagi
+- Founded: February 20, 2025
+- CEO: Yoshihiro Nakagawa
 - Location: Neo Soho Mall, West Jakarta, Indonesia
 
 ## Services

@@ -4,7 +4,7 @@
 
       <div class="site-footer__brand">
         <a href="{{ route('home') }}" class="site-footer__logo-link">
-          <img src="{{ asset('images/footer-mark.png') }}" alt="FTS AI logo mark" class="site-footer__logo-mark">
+          <img src="{{ asset('images/logo.png') }}" alt="FTS AI logo mark" class="site-footer__logo-mark">
           <span class="site-footer__logo-text">
             FTS AI
             <small>Fujiyama Technology Solutions</small>
