@@ -207,6 +207,7 @@
         e.preventDefault();
         var msg = input.value.trim();
         if (!msg) { return; }
+        appendUserMsg(msg);
         input.value = '';
         var optWrap = messages.querySelector('.chatbot__options');
         if (optWrap) { optWrap.remove(); }
